@@ -2,10 +2,10 @@ package formutil
 
 import (
 	"fmt"
-	"gnd.la/app"
-	"gnd.la/form"
-	"gnd.la/html"
-	"gnd.la/i18n"
+	"gondola/app"
+	"gondola/form"
+	"gondola/html"
+	"gondola/i18n"
 	"math/rand"
 	"strconv"
 )

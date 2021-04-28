@@ -7,8 +7,8 @@ import (
 	"io"
 	"net/http"
 
-	"gnd.la/blobstore/driver"
-	"gnd.la/config"
+	"gondola/blobstore/driver"
+	"gondola/config"
 
 	"appengine"
 	"appengine/blobstore"

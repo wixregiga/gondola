@@ -12,10 +12,11 @@ import (
 
 	"github.com/rainycape/command"
 
+	"gondola/internal/gen/genutil"
+	"gondola/log"
+	"gondola/util/vfsutil"
+
 	"github.com/rainycape/vfs"
-	"gnd.la/internal/gen/genutil"
-	"gnd.la/log"
-	"gnd.la/util/vfsutil"
 )
 
 type bakeOptions struct {
@@ -64,7 +65,7 @@ func bakeCommand(_ *command.Args, opts *bakeOptions) error {
 
 func writeBakedFSCode(w io.Writer, opts *bakeOptions, extensions []string) (err error) {
 	if opts.VFS {
-		if _, err = io.WriteString(w, "import \"gnd.la/util/vfsutil\"\n"); err != nil {
+		if _, err = io.WriteString(w, "import \"gondola/util/vfsutil\"\n"); err != nil {
 			return err
 		}
 	}

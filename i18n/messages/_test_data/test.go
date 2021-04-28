@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"gnd.la/app"
-	"gnd.la/i18n"
+	"gondola/app"
+	"gondola/i18n"
 )
 
 type Test struct {
@@ -59,7 +59,7 @@ func main() {
 }
 
 func testing(ctx *app.Context) {
-	/// This is a very long comment to test the 80 columns per line splitting used automatically by gnd.la/i18n. Isn't it cool?
+	/// This is a very long comment to test the 80 columns per line splitting used automatically by gondola/i18n. Isn't it cool?
 	ctx.T("Testing more translations")
 }
 

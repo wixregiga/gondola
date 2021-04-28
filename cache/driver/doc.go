@@ -16,7 +16,7 @@
 // that real numbers can be used, like e.g. 1.5G
 //
 // Paths which don't start with a / are interepreted as relative to the application binary
-// (using gnd.la/util/pathutil.Relative), while paths starting by / are interpreted as absolute.
+// (using gondola/util/pathutil.Relative), while paths starting by / are interpreted as absolute.
 // Note that paths should aways use forward slashes, even in platforms which use the backslash
 // by default (e.g. /C:/Documents/my_cache_path).
 package driver

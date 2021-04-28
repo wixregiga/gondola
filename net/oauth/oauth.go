@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"gnd.la/net/httpclient"
+	"gondola/net/httpclient"
 )
 
 type Consumer struct {

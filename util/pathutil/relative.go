@@ -1,7 +1,7 @@
 package pathutil
 
 import (
-	"gnd.la/internal"
+	"gondola/internal"
 	"os"
 	"path/filepath"
 )

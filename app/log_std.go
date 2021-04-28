@@ -2,7 +2,7 @@
 
 package app
 
-import "gnd.la/log"
+import "gondola/log"
 
 func (c *Context) logger() log.Interface {
 	if c == nil || c.app.Logger == nil {

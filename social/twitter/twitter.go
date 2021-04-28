@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"net/url"
 
-	"gnd.la/net/httpclient"
-	"gnd.la/net/oauth"
-	"gnd.la/util/stringutil"
+	"gondola/net/httpclient"
+	"gondola/net/oauth"
+	"gondola/util/stringutil"
 )
 
 const (

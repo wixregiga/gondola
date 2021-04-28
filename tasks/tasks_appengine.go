@@ -5,7 +5,7 @@ package tasks
 import (
 	"sync"
 
-	"gnd.la/app"
+	"gondola/app"
 )
 
 var pendingTasks struct {

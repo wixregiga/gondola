@@ -3,7 +3,7 @@ package form
 import (
 	"io"
 
-	"gnd.la/html"
+	"gondola/html"
 )
 
 // Renderer is the interface implemented to help the form

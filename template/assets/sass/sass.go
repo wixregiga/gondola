@@ -6,7 +6,7 @@ import (
 	"io"
 	"path/filepath"
 
-	"gnd.la/template/assets"
+	"gondola/template/assets"
 
 	"github.com/wellington/go-libsass"
 )

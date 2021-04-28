@@ -4,8 +4,8 @@ package genutil
 import (
 	"bytes"
 	"fmt"
-	"gnd.la/util/fileutil"
 	"go/format"
+	"gondola/util/fileutil"
 	"io/ioutil"
 	"os"
 	"strings"

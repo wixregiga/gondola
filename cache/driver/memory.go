@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"gnd.la/config"
-	"gnd.la/util/parseutil"
+	"gondola/config"
+	"gondola/util/parseutil"
 )
 
 type item struct {

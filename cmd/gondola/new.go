@@ -15,11 +15,11 @@ import (
 	"text/tabwriter"
 	"text/template"
 
-	"gnd.la/log"
-	"gnd.la/util/fileutil"
-	"gnd.la/util/generic"
-	"gnd.la/util/stringutil"
-	"gnd.la/util/yaml"
+	"gondola/log"
+	"gondola/util/fileutil"
+	"gondola/util/generic"
+	"gondola/util/stringutil"
+	"gondola/util/yaml"
 
 	"os/user"
 

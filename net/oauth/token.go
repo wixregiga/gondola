@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/url"
 
-	"gnd.la/net/httpclient"
+	"gondola/net/httpclient"
 )
 
 type Token struct {

@@ -13,10 +13,10 @@
 //  nojs (bool): disables loading bootstrap's javascript library
 //  e.g. bootstrap|nojs: 3.0.0
 //
-// See gnd.la/template and gnd.la/template/assets for more information
+// See gondola/template and gondola/template/assets for more information
 // about template functions and the assets pipeline.
 //
 // Importing this package will also register FormRenderer as the default
-// gnd.la/form renderer and PaginatorRenderer as the default
-// gnd.la/html/paginator renderer.
+// gondola/form renderer and PaginatorRenderer as the default
+// gondola/html/paginator renderer.
 package bootstrap3

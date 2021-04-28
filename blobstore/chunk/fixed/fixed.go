@@ -3,7 +3,7 @@
 package fixed
 
 import (
-	"gnd.la/blobstore/chunk"
+	"gondola/blobstore/chunk"
 )
 
 type chunker struct {

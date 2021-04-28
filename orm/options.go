@@ -1,7 +1,7 @@
 package orm
 
 import (
-	"gnd.la/orm/index"
+	"gondola/orm/index"
 )
 
 // Options are the structure used to specify

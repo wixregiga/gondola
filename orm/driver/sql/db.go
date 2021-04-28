@@ -8,8 +8,8 @@ import (
 	"strings"
 	"sync"
 
-	"gnd.la/internal"
-	"gnd.la/orm/driver"
+	"gondola/internal"
+	"gondola/orm/driver"
 )
 
 var (
@@ -194,7 +194,7 @@ func (d *DB) preparedStmt(s string) *sql.Stmt {
 	// up parsing twice for one execution.
 	//
 	// XXX: Also, sqlite has some issues with prepared stmts
-	// and transactions. TestMigrations in gnd.la/orm wouldn't
+	// and transactions. TestMigrations in gondola/orm wouldn't
 	// pass because the connection which created the 1st
 	// "migration "table was incorrectly in a transaction and when
 	// creating the table for the 1st migration (BadMigration1),

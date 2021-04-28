@@ -8,17 +8,17 @@ import (
 	"strconv"
 	"strings"
 
-	"gnd.la/app/profile"
-	"gnd.la/config"
-	"gnd.la/encoding/codec"
-	"gnd.la/encoding/pipe"
-	"gnd.la/internal"
-	"gnd.la/log"
-	"gnd.la/orm/driver"
-	"gnd.la/orm/index"
-	"gnd.la/orm/operation"
-	"gnd.la/orm/query"
-	"gnd.la/util/structs"
+	"gondola/app/profile"
+	"gondola/config"
+	"gondola/encoding/codec"
+	"gondola/encoding/pipe"
+	"gondola/internal"
+	"gondola/log"
+	"gondola/orm/driver"
+	"gondola/orm/index"
+	"gondola/orm/operation"
+	"gondola/orm/query"
+	"gondola/util/structs"
 )
 
 var (

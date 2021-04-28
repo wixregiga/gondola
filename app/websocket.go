@@ -10,7 +10,7 @@ import (
 
 	"golang.org/x/net/websocket"
 
-	"gnd.la/internal/devutil/devserver"
+	"gondola/internal/devutil/devserver"
 )
 
 type wsKey int

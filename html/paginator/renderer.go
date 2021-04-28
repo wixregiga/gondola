@@ -1,6 +1,6 @@
 package paginator
 
-import "gnd.la/html"
+import "gondola/html"
 
 type PageFlags int
 

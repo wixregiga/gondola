@@ -1,7 +1,7 @@
 package orm
 
 import (
-	"gnd.la/signals"
+	"gondola/signals"
 )
 
 type ormSignal struct {
@@ -19,9 +19,9 @@ func (s *ormSignal) emit(o *Orm) {
 }
 
 // Signals declares the signals emitted by this package. See
-// gnd.la/signals for more information.
+// gondola/signals for more information.
 var Signals = struct {
-	// WillInitialize is emitted just before a gnd.la/orm.Orm is
+	// WillInitialize is emitted just before a gondola/orm.Orm is
 	// initialized.
 	WillInitialize *ormSignal
 }{

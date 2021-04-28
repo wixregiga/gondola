@@ -15,7 +15,7 @@ import (
 
 	"sort"
 
-	"gnd.la/util/stringutil"
+	"gondola/util/stringutil"
 )
 
 var (

@@ -14,9 +14,9 @@ import (
 	"net/http"
 	"time"
 
-	"gnd.la/crypto/cryptoutil"
-	"gnd.la/encoding/base64"
-	"gnd.la/encoding/codec"
+	"gondola/crypto/cryptoutil"
+	"gondola/encoding/base64"
+	"gondola/encoding/codec"
 )
 
 const (
@@ -61,7 +61,7 @@ type Options struct {
 }
 
 // Cookies includes conveniency functions for setting
-// and retrieving cookies. Use New() or gnd.la/app.Context.Cookies
+// and retrieving cookies. Use New() or gondola/app.Context.Cookies
 // to create a Cookies instance.
 type Cookies struct {
 	r         *http.Request
@@ -76,7 +76,7 @@ type transformer func([]byte) ([]byte, error)
 
 // New returns a new *Cookies object, which will read cookies from the
 // given http.Request, and write them to the given http.ResponseWriter.
-// Note that users will probably want to use gnd.la/app.Context.Cookies
+// Note that users will probably want to use gondola/app.Context.Cookies
 // rather than this function to create a Cookies instance.
 //
 // The signer parameter is used for secure (signed) cookies, while
@@ -237,7 +237,7 @@ func (c *Cookies) Get(name string, out interface{}) error {
 // ErrCookieTooBig.
 //
 // The options used for the cookie are the default ones provided
-// in New(), which will usually come from gnd.la/app.App.CookieOptions.
+// in New(), which will usually come from gondola/app.App.CookieOptions.
 // If you need to specify different options, use SetOpts().
 func (c *Cookies) Set(name string, value interface{}) error {
 	return c.SetOpts(name, value, nil)
@@ -272,10 +272,10 @@ func (c *Cookies) GetSecure(name string, out interface{}) error {
 // SetEncrypted().
 //
 // If you haven't set a Signer (usually set automatically for you, derived from
-// the gnd.la/app.App.Secret field), this function will return an error.
+// the gondola/app.App.Secret field), this function will return an error.
 //
 // The options used for the cookie are the default ones provided
-// in New(), which will usually come from gnd.la/app.App.CookieOptions.
+// in New(), which will usually come from gondola/app.App.CookieOptions.
 // If you need to specify different options, use SetSecureOpts().
 func (c *Cookies) SetSecure(name string, value interface{}) error {
 	return c.SetSecureOpts(name, value, nil)
@@ -313,11 +313,11 @@ func (c *Cookies) GetEncrypted(name string, out interface{}) error {
 // be able to tamper with the cookie value nor reveal its contents.
 //
 // If you haven't set a Signer (usually set automatically for you, derived from
-// the gnd.la/app.App.Secret field) and an Encrypter (usually set automatically too,
-// from gnd.la/app.App.EncryptionKey), this function will return an error.
+// the gondola/app.App.Secret field) and an Encrypter (usually set automatically too,
+// from gondola/app.App.EncryptionKey), this function will return an error.
 //
 // The options used for the cookie are the default ones provided
-// in New(), which will usually come from gnd.la/app.App.CookieOptions.
+// in New(), which will usually come from gondola/app.App.CookieOptions.
 // If you need to specify different options, use SetEncryptedOpts().
 func (c *Cookies) SetEncrypted(name string, value interface{}) error {
 	return c.SetEncryptedOpts(name, value, nil)

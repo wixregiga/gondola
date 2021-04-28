@@ -12,9 +12,9 @@ import (
 	"strings"
 	"time"
 
-	"gnd.la/app/serialize"
-	"gnd.la/html"
-	"gnd.la/util/types"
+	"gondola/app/serialize"
+	"gondola/html"
+	"gondola/util/types"
 )
 
 func eq(args ...interface{}) bool {

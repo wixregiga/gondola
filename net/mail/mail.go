@@ -11,7 +11,7 @@ import (
 	"net/mail"
 	"path"
 
-	"gnd.la/util/generic"
+	"gondola/util/generic"
 )
 
 const (
@@ -130,7 +130,7 @@ type Message struct {
 // Send sends an email to the given addresses and using the given Message. Note that
 // if Message is nil, an error is returned. See the Options documentation for
 // further information.
-// This function does not work on App Engine. Use gnd.la/app.Context.SendMail.
+// This function does not work on App Engine. Use gondola/app.Context.SendMail.
 func Send(msg *Message) error {
 	if msg == nil {
 		return errNoMessage

@@ -3,7 +3,7 @@ package driver
 import (
 	"reflect"
 
-	"gnd.la/util/structs"
+	"gondola/util/structs"
 )
 
 type Reference struct {

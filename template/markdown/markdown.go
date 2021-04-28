@@ -1,9 +1,9 @@
 // Package markdown implements a Markdown template converter.
 //
-// To enable it, import gnd.la/template/markdown like e.g.
+// To enable it, import gondola/template/markdown like e.g.
 //
 //  import (
-//	_ "gnd.la/template/markdown"
+//	_ "gondola/template/markdown"
 //  )
 //
 // Any templates with the .md extension will be converted to HTML
@@ -35,7 +35,7 @@ import (
 	"bytes"
 	"regexp"
 
-	"gnd.la/template"
+	"gondola/template"
 
 	"github.com/russross/blackfriday"
 )

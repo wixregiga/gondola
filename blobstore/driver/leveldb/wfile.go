@@ -5,10 +5,10 @@ import (
 	"errors"
 	"sync"
 
-	"gnd.la/blobstore/chunk"
-	"gnd.la/blobstore/chunk/fixed"
-	"gnd.la/encoding/binary"
-	"gnd.la/internal"
+	"gondola/blobstore/chunk"
+	"gondola/blobstore/chunk/fixed"
+	"gondola/encoding/binary"
+	"gondola/internal"
 
 	"github.com/syndtr/goleveldb/leveldb"
 )

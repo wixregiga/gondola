@@ -4,14 +4,14 @@ import (
 	"net/http"
 	"time"
 
-	"gnd.la/internal/httpserve"
-	"gnd.la/log"
+	"gondola/internal/httpserve"
+	"gondola/log"
 )
 
 // Handler returns an http.handlerFunc which serves the assets from this
 // Manager. To avoid circular imports, this function returns an http.HandlerFunc
-// rather than a gnd.la/app.Handler. To obtain a gnd.la/app.Handler use
-// gnd.la/app.HandlerFromHTTPFunc.
+// rather than a gondola/app.Handler. To obtain a gondola/app.Handler use
+// gondola/app.HandlerFromHTTPFunc.
 func (m *Manager) Handler() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		p := m.Path(r.URL)

@@ -1,11 +1,11 @@
 package bootstrap3
 
 import (
-	"gnd.la/html"
-	"gnd.la/html/paginator"
+	"gondola/html"
+	"gondola/html/paginator"
 )
 
-// PaginatorRenderer implements a gnd.la/html/paginator
+// PaginatorRenderer implements a gondola/html/paginator
 // Renderer using bootstrap. The size attribute might be used
 // to alter the size of the pager. Note that currently bootstrap
 // paginators might be only Medium (the default), Small or Large.

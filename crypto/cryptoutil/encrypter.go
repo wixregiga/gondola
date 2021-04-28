@@ -4,7 +4,7 @@ import (
 	"crypto/aes"
 	"crypto/cipher"
 	"errors"
-	"gnd.la/util/stringutil"
+	"gondola/util/stringutil"
 )
 
 var (

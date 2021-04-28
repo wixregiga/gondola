@@ -3,7 +3,7 @@ package template
 import (
 	"html/template"
 
-	htmltemplate "gnd.la/template/internal/htmltemplate"
+	htmltemplate "gondola/template/internal/htmltemplate"
 )
 
 // These types are aliases for the ones defined in

@@ -5,9 +5,9 @@ import (
 	"strings"
 	"time"
 
-	"gnd.la/app"
-	"gnd.la/net/oauth2"
-	"gnd.la/social/google"
+	"gondola/app"
+	"gondola/net/oauth2"
+	"gondola/social/google"
 )
 
 type Google struct {

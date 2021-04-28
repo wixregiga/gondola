@@ -1,7 +1,7 @@
 package social
 
 import (
-	"gnd.la/app"
+	"gondola/app"
 	"time"
 )
 

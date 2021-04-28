@@ -5,11 +5,11 @@ package app
 import (
 	"errors"
 
-	"gnd.la/blobstore"
-	"gnd.la/cache"
-	"gnd.la/net/mail"
-	"gnd.la/orm"
-	"gnd.la/orm/driver/datastore"
+	"gondola/blobstore"
+	"gondola/cache"
+	"gondola/net/mail"
+	"gondola/orm"
+	"gondola/orm/driver/datastore"
 
 	"appengine"
 )

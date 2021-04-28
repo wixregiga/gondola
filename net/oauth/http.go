@@ -6,7 +6,7 @@ import (
 	"net/url"
 	"strings"
 
-	"gnd.la/net/httpclient"
+	"gondola/net/httpclient"
 )
 
 var (

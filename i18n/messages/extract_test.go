@@ -3,7 +3,7 @@ package messages
 import (
 	"bytes"
 	"flag"
-	"gnd.la/log"
+	"gondola/log"
 	"io/ioutil"
 	"path/filepath"
 	"testing"

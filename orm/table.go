@@ -1,7 +1,7 @@
 package orm
 
 import (
-	"gnd.la/orm/query"
+	"gondola/orm/query"
 )
 
 type Table struct {

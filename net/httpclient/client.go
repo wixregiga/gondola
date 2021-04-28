@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"gnd.la/app/profile"
-	"gnd.la/log"
+	"gondola/app/profile"
+	"gondola/log"
 )
 
 const (

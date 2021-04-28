@@ -9,8 +9,8 @@ import (
 	"sync"
 	"time"
 
-	"gnd.la/log"
-	"gnd.la/util/generic"
+	"gondola/log"
+	"gondola/util/generic"
 
 	"gopkg.in/fsnotify.v1"
 )

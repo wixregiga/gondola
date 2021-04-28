@@ -8,10 +8,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"gnd.la/blobstore/driver"
-	"gnd.la/config"
-	"gnd.la/util/fileutil"
-	"gnd.la/util/pathutil"
+	"gondola/blobstore/driver"
+	"gondola/config"
+	"gondola/util/fileutil"
+	"gondola/util/pathutil"
 )
 
 type fsDriver struct {

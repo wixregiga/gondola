@@ -7,7 +7,7 @@ import (
 	"io"
 	"strings"
 
-	"gnd.la/encoding/binary"
+	"gondola/encoding/binary"
 )
 
 type Formula func(n int) int

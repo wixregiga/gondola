@@ -20,9 +20,9 @@ import (
 
 	"code.google.com/p/go.tools/go/types"
 
-	"gnd.la/apps/articles/article"
-	"gnd.la/internal/astutil"
-	"gnd.la/internal/gen/genutil"
+	"gondola/apps/articles/article"
+	"gondola/internal/astutil"
+	"gondola/internal/gen/genutil"
 )
 
 func commentsBetween(f *ast.File, begin token.Pos, end token.Pos) string {
@@ -97,7 +97,7 @@ func documentFunction(f *ast.File, pkg *genutil.Package, value ast.Expr, prev to
 }
 
 func main() {
-	pkg, err := genutil.NewPackage("gnd.la/template")
+	pkg, err := genutil.NewPackage("gondola/template")
 	if err != nil {
 		panic(err)
 	}

@@ -6,11 +6,11 @@ import (
 	"strings"
 	"time"
 
-	"gnd.la/orm/driver"
-	"gnd.la/orm/index"
-	"gnd.la/util/generic"
-	"gnd.la/util/structs"
-	"gnd.la/util/types"
+	"gondola/orm/driver"
+	"gondola/orm/index"
+	"gondola/util/generic"
+	"gondola/util/structs"
+	"gondola/util/types"
 )
 
 // Backend is the interface implemented by drivers

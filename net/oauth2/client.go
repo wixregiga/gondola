@@ -6,9 +6,9 @@ import (
 	"net/url"
 	"strings"
 
-	"gnd.la/net/httpclient"
-	"gnd.la/net/urlutil"
-	"gnd.la/util/stringutil"
+	"gondola/net/httpclient"
+	"gondola/net/urlutil"
+	"gondola/util/stringutil"
 )
 
 // Client represents an oAuth 2 client. Use New

@@ -12,9 +12,9 @@ import (
 	"sort"
 	"strings"
 
-	"gnd.la/app"
-	"gnd.la/internal/runtimeutil"
-	"gnd.la/util/stringutil"
+	"gondola/app"
+	"gondola/internal/runtimeutil"
+	"gondola/util/stringutil"
 )
 
 var (

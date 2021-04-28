@@ -1,8 +1,8 @@
 package layer
 
 import (
-	"gnd.la/app"
-	"gnd.la/crypto/hashutil"
+	"gondola/app"
+	"gondola/crypto/hashutil"
 	"net/http"
 )
 

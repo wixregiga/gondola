@@ -5,7 +5,7 @@ package orm
 import (
 	"testing"
 
-	"gnd.la/orm/driver/datastore"
+	"gondola/orm/driver/datastore"
 
 	"appengine/aetest"
 )

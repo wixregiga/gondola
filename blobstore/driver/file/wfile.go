@@ -4,7 +4,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"gnd.la/blobstore/driver"
+	"gondola/blobstore/driver"
 )
 
 type wfile struct {

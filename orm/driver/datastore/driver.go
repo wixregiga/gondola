@@ -7,12 +7,12 @@ import (
 	"reflect"
 	"strings"
 
-	"gnd.la/config"
-	"gnd.la/log"
-	"gnd.la/orm/driver"
-	"gnd.la/orm/operation"
-	"gnd.la/orm/query"
-	"gnd.la/util/types"
+	"gondola/config"
+	"gondola/log"
+	"gondola/orm/driver"
+	"gondola/orm/operation"
+	"gondola/orm/query"
+	"gondola/util/types"
 
 	"appengine"
 	"appengine/datastore"

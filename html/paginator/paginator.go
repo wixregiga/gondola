@@ -5,7 +5,7 @@ import (
 	"html/template"
 	"strconv"
 
-	"gnd.la/html"
+	"gondola/html"
 )
 
 var (

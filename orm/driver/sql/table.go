@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"strings"
 
-	"gnd.la/orm/driver"
-	"gnd.la/util/generic"
+	"gondola/orm/driver"
+	"gondola/util/generic"
 )
 
 type ConstraintType int

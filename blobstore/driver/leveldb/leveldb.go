@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"gnd.la/blobstore/driver"
-	"gnd.la/config"
-	"gnd.la/internal"
-	"gnd.la/util/pathutil"
+	"gondola/blobstore/driver"
+	"gondola/config"
+	"gondola/internal"
+	"gondola/util/pathutil"
 
 	"github.com/syndtr/goleveldb/leveldb"
 	"github.com/syndtr/goleveldb/leveldb/filter"

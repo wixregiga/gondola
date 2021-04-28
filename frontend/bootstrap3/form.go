@@ -5,15 +5,15 @@ import (
 	"fmt"
 	"io"
 
-	"gnd.la/form"
-	"gnd.la/html"
+	"gondola/form"
+	"gondola/html"
 )
 
 const (
 	numCols = 12
 )
 
-// FormRenderer implements a gnd.la/form renderer using
+// FormRenderer implements a gondola/form renderer using
 // bootstrap.
 type FormRenderer struct {
 	inputCols map[Size]int

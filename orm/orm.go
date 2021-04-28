@@ -6,21 +6,21 @@ import (
 	"reflect"
 	"strings"
 
-	"gnd.la/app/profile"
-	"gnd.la/config"
-	"gnd.la/log"
-	"gnd.la/orm/driver"
-	"gnd.la/orm/driver/sql"
-	"gnd.la/orm/query"
-	"gnd.la/util/types"
+	"gondola/app/profile"
+	"gondola/config"
+	"gondola/log"
+	"gondola/orm/driver"
+	"gondola/orm/driver/sql"
+	"gondola/orm/query"
+	"gondola/util/types"
 )
 
 var (
 	imports = map[string]string{
-		"postgres": "gnd.la/orm/driver/postgres",
-		"sqlite":   "gnd.la/orm/driver/sqlite",
-		"sqlite3":  "gnd.la/orm/driver/sqlite",
-		"mysql":    "gnd.la/orm/driver/mysql",
+		"postgres": "gondola/orm/driver/postgres",
+		"sqlite":   "gondola/orm/driver/sqlite",
+		"sqlite3":  "gondola/orm/driver/sqlite",
+		"mysql":    "gondola/orm/driver/mysql",
 	}
 	errUntypedNilPointer = errors.New("untyped nil pointer passed to Next(). Please, cast it to the appropriate type e.g. (*MyType)(nil)")
 	errNoModel           = errors.New("query without model - did you forget output parameters?")
@@ -478,9 +478,9 @@ func (o *Orm) Driver() driver.Driver {
 // SqlDB returns the underlying database connection iff the
 // ORM driver is using database/sql. Otherwise, it
 // returns nil. Note that the returned value isn't of type
-// database/sql.DB, but gnd.la/orm/driver/sql.DB, which is
+// database/sql.DB, but gondola/orm/driver/sql.DB, which is
 // a small compatibility wrapper around the former. See the
-// gnd.la/orm/driver/sql.DB documentation for further
+// gondola/orm/driver/sql.DB documentation for further
 // information.
 func (o *Orm) SqlDB() *sql.DB {
 	return o.db

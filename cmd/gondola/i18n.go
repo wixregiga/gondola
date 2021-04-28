@@ -5,9 +5,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"gnd.la/i18n/messages"
-	"gnd.la/i18n/po"
-	"gnd.la/log"
+	"gondola/i18n/messages"
+	"gondola/i18n/po"
+	"gondola/log"
 
 	"github.com/rainycape/command"
 )

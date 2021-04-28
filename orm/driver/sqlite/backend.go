@@ -6,14 +6,14 @@ import (
 	"strings"
 	"time"
 
-	"gnd.la/config"
-	"gnd.la/encoding/codec"
-	"gnd.la/orm/driver"
-	"gnd.la/orm/driver/sql"
-	"gnd.la/orm/index"
-	"gnd.la/util/generic"
-	"gnd.la/util/stringutil"
-	"gnd.la/util/structs"
+	"gondola/config"
+	"gondola/encoding/codec"
+	"gondola/orm/driver"
+	"gondola/orm/driver/sql"
+	"gondola/orm/index"
+	"gondola/util/generic"
+	"gondola/util/stringutil"
+	"gondola/util/structs"
 
 	_ "github.com/mattn/go-sqlite3"
 )

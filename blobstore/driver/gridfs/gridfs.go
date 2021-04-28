@@ -9,11 +9,12 @@ package gridfs
 
 import (
 	"fmt"
-	"gnd.la/blobstore/driver"
-	"gnd.la/config"
+	"gondola/blobstore/driver"
+	"gondola/config"
+	"sync"
+
 	"labix.org/v2/mgo"
 	"labix.org/v2/mgo/bson"
-	"sync"
 )
 
 const (

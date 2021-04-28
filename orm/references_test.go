@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"gnd.la/orm/driver"
-	"gnd.la/orm/driver/sql"
-	"gnd.la/orm/driver/sqlite"
+	"gondola/orm/driver"
+	"gondola/orm/driver/sql"
+	"gondola/orm/driver/sqlite"
 )
 
 type BadEvent struct {

@@ -3,7 +3,7 @@ package driver
 import (
 	"errors"
 
-	"gnd.la/config"
+	"gondola/config"
 )
 
 var (

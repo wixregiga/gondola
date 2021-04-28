@@ -6,9 +6,9 @@ import (
 	"sync"
 	"time"
 
-	"gnd.la/encoding/codec"
-	"gnd.la/encoding/pipe"
-	"gnd.la/util/structs"
+	"gondola/encoding/codec"
+	"gondola/encoding/pipe"
+	"gondola/util/structs"
 )
 
 var (

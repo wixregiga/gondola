@@ -2,9 +2,9 @@ package doc
 
 import (
 	"errors"
-	"gnd.la/internal/astutil"
 	"go/ast"
 	"go/doc"
+	"gondola/internal/astutil"
 	"strings"
 )
 

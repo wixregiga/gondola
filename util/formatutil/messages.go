@@ -1,6 +1,6 @@
 package formatutil
 
-import "gnd.la/i18n/table"
+import "gondola/i18n/table"
 
 // AUTOMATICALLY GENERATED WITH gondola compile-messages -- DO NOT EDIT!
 

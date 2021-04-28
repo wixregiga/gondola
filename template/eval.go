@@ -2,7 +2,7 @@ package template
 
 import (
 	"fmt"
-	"gnd.la/util/types"
+	"gondola/util/types"
 	"reflect"
 	"strings"
 )

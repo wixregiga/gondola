@@ -2,8 +2,8 @@ package input
 
 import (
 	"fmt"
-	"gnd.la/i18n"
-	"gnd.la/util/types"
+	"gondola/i18n"
+	"gondola/util/types"
 	"math"
 	"reflect"
 	"strconv"

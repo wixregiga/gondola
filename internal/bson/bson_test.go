@@ -31,12 +31,13 @@ import (
 	"encoding/binary"
 	"encoding/json"
 	"errors"
-	"gnd.la/internal/bson"
-	. "launchpad.net/gocheck"
+	"gondola/internal/bson"
 	"net/url"
 	"reflect"
 	"testing"
 	"time"
+
+	. "launchpad.net/gocheck"
 )
 
 func TestAll(t *testing.T) {

@@ -52,7 +52,7 @@ msgid "Testing even more translations"
 msgstr ""
 
 #. This is a very long comment to test the 80 columns per line splitting used 
-#. automatically by gnd.la/i18n. Isn't it cool?
+#. automatically by gondola/i18n. Isn't it cool?
 #: _test_data/test.go:63
 msgid "Testing more translations"
 msgstr ""

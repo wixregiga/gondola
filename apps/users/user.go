@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"gnd.la/app"
-	"gnd.la/crypto/password"
+	"gondola/app"
+	"gondola/crypto/password"
 )
 
 var (

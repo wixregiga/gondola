@@ -9,8 +9,8 @@ import (
 	"io/ioutil"
 	"path"
 
-	"gnd.la/log"
-	"gnd.la/template/assets"
+	"gondola/log"
+	"gondola/template/assets"
 )
 
 func executeAsset(t *Template, p *Template, vars VarMap, m *assets.Manager, asset *assets.Asset) (string, error) {

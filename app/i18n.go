@@ -1,8 +1,8 @@
 package app
 
 import (
-	"gnd.la/i18n"
-	"gnd.la/i18n/table"
+	"gondola/i18n"
+	"gondola/i18n/table"
 )
 
 func (c *Context) Language() string {

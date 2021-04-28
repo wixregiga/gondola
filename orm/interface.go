@@ -3,8 +3,8 @@ package orm
 import (
 	"reflect"
 
-	"gnd.la/orm/operation"
-	"gnd.la/orm/query"
+	"gondola/orm/operation"
+	"gondola/orm/query"
 )
 
 // Interface is implemented by both Orm

@@ -9,15 +9,15 @@ import (
 	"sync"
 	"time"
 
-	"gnd.la/encoding/codec"
-	"gnd.la/encoding/pipe"
-	"gnd.la/form/input"
-	"gnd.la/log"
-	"gnd.la/orm/driver"
-	"gnd.la/orm/query"
-	"gnd.la/util/stringutil"
-	"gnd.la/util/structs"
-	"gnd.la/util/types"
+	"gondola/encoding/codec"
+	"gondola/encoding/pipe"
+	"gondola/form/input"
+	"gondola/log"
+	"gondola/orm/driver"
+	"gondola/orm/query"
+	"gondola/util/stringutil"
+	"gondola/util/structs"
+	"gondola/util/types"
 )
 
 type nameRegistry map[string]*model
@@ -190,8 +190,8 @@ func (o *Orm) initializePending() error {
 
 // Initialize is a low level function and should only be used
 // when dealing with multiple ORM types. If you're only using the
-// default ORM as returned by gnd.la/app.App.Orm() or
-// gnd.la/app.Context.Orm() you should not call this function
+// default ORM as returned by gondola/app.App.Orm() or
+// gondola/app.Context.Orm() you should not call this function
 // manually.
 //
 // Initialize resolves model references and creates tables and

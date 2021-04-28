@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 	"time"
 
-	"gnd.la/config"
-	"gnd.la/crypto/hashutil"
-	"gnd.la/util/pathutil"
+	"gondola/config"
+	"gondola/crypto/hashutil"
+	"gondola/util/pathutil"
 )
 
 type FileSystemDriver struct {

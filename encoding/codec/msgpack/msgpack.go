@@ -3,13 +3,14 @@
 // To enable it in your app, import it like:
 //
 //  import (
-//	_ "gnd.la/encoding/codec/msgpack"
+//	_ "gondola/encoding/codec/msgpack"
 //  )
 package msgpack
 
 import (
+	"gondola/encoding/codec"
+
 	gocodec "github.com/ugorji/go/codec"
-	"gnd.la/encoding/codec"
 )
 
 var (

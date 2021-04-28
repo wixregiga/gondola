@@ -1,9 +1,9 @@
 package articles
 
 import (
-	"gnd.la/app"
-	"gnd.la/app/reusableapp"
-	"gnd.la/apps/articles/article"
+	"gondola/app"
+	"gondola/app/reusableapp"
+	"gondola/apps/articles/article"
 )
 
 type appData struct {

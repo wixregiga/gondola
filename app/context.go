@@ -13,19 +13,19 @@ import (
 	"sync"
 	"time"
 
-	"gnd.la/app/cookies"
-	"gnd.la/app/profile"
-	"gnd.la/app/serialize"
-	"gnd.la/blobstore"
-	"gnd.la/cache"
-	"gnd.la/form/input"
-	"gnd.la/i18n/table"
-	"gnd.la/internal"
-	"gnd.la/kvs"
-	"gnd.la/log"
-	"gnd.la/net/urlutil"
-	"gnd.la/orm"
-	"gnd.la/util/types"
+	"gondola/app/cookies"
+	"gondola/app/profile"
+	"gondola/app/serialize"
+	"gondola/blobstore"
+	"gondola/cache"
+	"gondola/form/input"
+	"gondola/i18n/table"
+	"gondola/internal"
+	"gondola/kvs"
+	"gondola/log"
+	"gondola/net/urlutil"
+	"gondola/orm"
+	"gondola/util/types"
 )
 
 var (
@@ -34,7 +34,7 @@ var (
 	// value but keep in mind that all previously issued
 	// signed cookies will be invalidated, since their
 	// signature won't match.
-	CookieSalt = []byte("gnd.la/app/cookies.salt")
+	CookieSalt = []byte("gondola/app/cookies.salt")
 )
 
 type ContextFinalizer func(*Context)
@@ -159,8 +159,8 @@ func (c *Context) RequireFormValue(name string) string {
 // returns an InvalidParameterError.
 //
 // Supported types are: bool, u?int(8|16|32|64)? and float(32|64)
-// Internally, ParseFormValue uses gnd.la/form/input to parse
-// its arguments, so any type implementing gnd.la/form/input.Parser
+// Internally, ParseFormValue uses gondola/form/input to parse
+// its arguments, so any type implementing gondola/form/input.Parser
 // can be used too.
 //
 // Note that arg is not altered the returned error is non-nil.
@@ -255,13 +255,13 @@ func (c *Context) boolValue(key string) bool {
 }
 
 // Cached returns true if the request was cached by a cache layer.
-// See gnd.la/cache/layer for more information.
+// See gondola/cache/layer for more information.
 func (c *Context) Cached() bool {
 	return c.boolValue(internal.LayerCachedKey)
 }
 
 // ServedFromCache returns true if the request was served by a cache layer.
-// See gnd.la/cache/layer for more information.
+// See gondola/cache/layer for more information.
 func (c *Context) ServedFromCache() bool {
 	return c.boolValue(internal.LayerServedFromCacheKey)
 }
@@ -384,7 +384,7 @@ func (c *Context) URL() *url.URL {
 
 // Cookies returns a coookies.Cookies object which
 // can be used to set and delete cookies. See the documentation
-// on gnd.la/cookies for more information.
+// on gondola/cookies for more information.
 func (c *Context) Cookies() *cookies.Cookies {
 	if c.cookies == nil {
 		signer, _ := c.app.Signer(CookieSalt)
@@ -600,9 +600,9 @@ func (c *Context) Wait() {
 }
 
 // Logger returns a Logger which allows logging mesages in several
-// levels. See gnd.la/log.Interface interface for more information.
+// levels. See gondola/log.Interface interface for more information.
 // Note that this function will always return non-nil even when logging
-// is disabled, so it's safe to call any gnd.la/log.Interface methods
+// is disabled, so it's safe to call any gondola/log.Interface methods
 // unconditionally (i.e. don't check if the returned value is nil, it'll
 // never be).
 func (c *Context) Logger() log.Interface {

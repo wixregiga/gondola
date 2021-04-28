@@ -8,13 +8,13 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"gnd.la/app"
-	"gnd.la/template/assets"
-	"gnd.la/util/vfsutil"
+	"gondola/app"
+	"gondola/template/assets"
+	"gondola/util/vfsutil"
 )
 
 // App allows implementing apps which can be directly included
-// in a gnd.la/app.App. Use New to create an App.
+// in a gondola/app.App. Use New to create an App.
 type App struct {
 	app.App
 	name                  string
@@ -126,7 +126,7 @@ func AppData(a *app.App) interface{} {
 // Also, if the data is not found in the *app.App passed in as the first argument,
 // its children apps are also searched. This allows reusable apps to retrieve their
 // additional data in contexts where the reusable app pointer is not available.
-// (e.g. in template plugins which are called from the parent app). See gnd.la/apps/users
+// (e.g. in template plugins which are called from the parent app). See gondola/apps/users
 // for an example of this usage.
 func AppDataWithKey(a *app.App, key interface{}) interface{} {
 	ra, _ := a.Get(key).(*App)

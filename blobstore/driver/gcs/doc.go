@@ -4,7 +4,7 @@
 // To enable this driver, import it in your application:
 //
 //  import (
-//      _ "gnd.la/blobstore/driver/gcs"
+//      _ "gondola/blobstore/driver/gcs"
 //  )
 //
 // The URL format for this driver is:

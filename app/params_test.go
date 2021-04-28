@@ -4,8 +4,8 @@ import (
 	"strconv"
 	"testing"
 
-	"gnd.la/app"
-	"gnd.la/app/tester"
+	"gondola/app"
+	"gondola/app/tester"
 )
 
 func TestParameters(t *testing.T) {

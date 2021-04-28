@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"gnd.la/app"
-	"gnd.la/log"
-	"gnd.la/tasks"
+	"gondola/app"
+	"gondola/log"
+	"gondola/tasks"
 )
 
 const (
@@ -14,7 +14,7 @@ const (
 )
 
 type Sharer struct {
-	// Name indicates the name of the gnd.la/tasks.Task which will
+	// Name indicates the name of the gondola/tasks.Task which will
 	// be created when scheduling this Sharer. If empty, a name
 	// will be derived from the service and the Sharer instance.
 	Name     string

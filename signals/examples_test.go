@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"gnd.la/signals"
+	"gondola/signals"
 )
 
 // Message is exported, so callers can use the type emitted

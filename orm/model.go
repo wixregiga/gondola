@@ -6,9 +6,9 @@ import (
 	"strings"
 	"unicode"
 
-	"gnd.la/orm/driver"
-	"gnd.la/orm/index"
-	"gnd.la/orm/query"
+	"gondola/orm/driver"
+	"gondola/orm/index"
+	"gondola/orm/query"
 )
 
 type JoinType int

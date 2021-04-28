@@ -3,7 +3,7 @@ package fontawesome
 import (
 	htemplate "html/template"
 
-	"gnd.la/template"
+	"gondola/template"
 )
 
 func fa(s string) htemplate.HTML {

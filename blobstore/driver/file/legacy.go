@@ -7,7 +7,7 @@ import (
 	"io"
 	"os"
 
-	"gnd.la/blobstore/driver"
+	"gondola/blobstore/driver"
 )
 
 func bread(r io.Reader, data interface{}) error {

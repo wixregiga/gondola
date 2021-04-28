@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"gnd.la/log"
+	"gondola/log"
 
 	"github.com/rainycape/command"
 )
@@ -74,7 +74,7 @@ var (
 		},
 		{
 			Name:    "gae-test",
-			Help:    "Start serving your app on localhost and run gnd.la/app/tester tests against it",
+			Help:    "Start serving your app on localhost and run gondola/app/tester tests against it",
 			Func:    gaeTestCommand,
 			Options: &gaeTestOptions{},
 		},

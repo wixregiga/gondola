@@ -2,7 +2,7 @@ package sql
 
 import (
 	"database/sql"
-	"gnd.la/orm/driver"
+	"gondola/orm/driver"
 	"reflect"
 )
 

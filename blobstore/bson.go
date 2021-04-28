@@ -1,7 +1,7 @@
 package blobstore
 
 import (
-	"gnd.la/internal/bson"
+	"gondola/internal/bson"
 )
 
 func marshal(in interface{}) ([]byte, error) {

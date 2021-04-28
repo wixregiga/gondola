@@ -3,8 +3,8 @@
 package geoip
 
 import (
-	"gnd.la/app"
-	"gnd.la/log"
+	"gondola/app"
+	"gondola/log"
 
 	"github.com/rainycape/geoip"
 )

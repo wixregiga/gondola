@@ -11,7 +11,7 @@ import (
 )
 
 var (
-	errNoContext   = errors.New("no App Engine context available - if you're using gnd.la/net/mail.Send, use gnd.la/app.Context.SendMail instead")
+	errNoContext   = errors.New("no App Engine context available - if you're using gondola/net/mail.Send, use gondola/app.Context.SendMail instead")
 	allowedHeaders = []string{
 		"In-Reply-To",
 		"List-Id",

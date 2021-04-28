@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
-	"gnd.la/net/httpclient"
-	"gnd.la/net/urlutil"
+	"gondola/net/httpclient"
+	"gondola/net/urlutil"
 
 	"github.com/elazarl/goproxy"
 )

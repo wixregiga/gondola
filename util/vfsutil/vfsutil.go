@@ -9,8 +9,9 @@ import (
 	"path"
 	"strings"
 
+	"gondola/log"
+
 	"github.com/rainycape/vfs"
-	"gnd.la/log"
 )
 
 // VFS is just an alias for github.com/rainycape/vfs.VFS, to

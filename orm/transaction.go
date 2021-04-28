@@ -1,7 +1,7 @@
 package orm
 
 import (
-	"gnd.la/orm/driver"
+	"gondola/orm/driver"
 )
 
 var (

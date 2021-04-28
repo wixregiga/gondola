@@ -4,8 +4,8 @@ package runtimeutil
 
 import (
 	"fmt"
-	"gnd.la/html"
-	"gnd.la/util/stringutil"
+	"gondola/html"
+	"gondola/util/stringutil"
 	"html/template"
 	"runtime"
 	"strconv"

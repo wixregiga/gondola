@@ -10,10 +10,10 @@ import (
 	"path"
 	"strings"
 
-	"gnd.la/app"
-	"gnd.la/apps/docs/doc"
-	"gnd.la/html"
-	"gnd.la/log"
+	"gondola/app"
+	"gondola/apps/docs/doc"
+	"gondola/html"
+	"gondola/log"
 )
 
 var (

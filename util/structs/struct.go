@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"gnd.la/util/stringutil"
+	"gondola/util/stringutil"
 )
 
 var (

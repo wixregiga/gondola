@@ -8,10 +8,10 @@ import (
 	"testing"
 	"time"
 
-	_ "gnd.la/blobstore/driver/file"
-	_ "gnd.la/blobstore/driver/leveldb"
-	"gnd.la/config"
-	"gnd.la/util/formatutil"
+	_ "gondola/blobstore/driver/file"
+	_ "gondola/blobstore/driver/leveldb"
+	"gondola/config"
+	"gondola/util/formatutil"
 )
 
 func totalSize(p string) int64 {

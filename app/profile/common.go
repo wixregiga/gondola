@@ -10,7 +10,7 @@ const (
 	HeaderName = "X-Gondola-Profile"
 	// Salt is the salt used for signing the app secret for requesting
 	// profiling information.
-	Salt = "gnd.la/app/profile.salt"
+	Salt = "gondola/app/profile.salt"
 )
 
 // Note represents a note added to an event.

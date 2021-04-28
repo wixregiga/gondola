@@ -8,8 +8,8 @@ import (
 	"io/ioutil"
 	"os"
 
-	"gnd.la/app"
-	"gnd.la/log"
+	"gondola/app"
+	"gondola/log"
 
 	"github.com/rainycape/vfs"
 )

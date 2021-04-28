@@ -5,8 +5,8 @@ import (
 	"io/ioutil"
 	"sync"
 
-	"gnd.la/app"
-	"gnd.la/internal/devutil/devserver"
+	"gondola/app"
+	"gondola/internal/devutil/devserver"
 
 	"time"
 

@@ -1,7 +1,7 @@
 package app
 
 import (
-	"gnd.la/config"
+	"gondola/config"
 )
 
 // Type Config is represents the App configuration.

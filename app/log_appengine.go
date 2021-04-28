@@ -5,8 +5,8 @@ package app
 import (
 	"fmt"
 
-	"gnd.la/internal"
-	"gnd.la/log"
+	"gondola/internal"
+	"gondola/log"
 
 	"appengine"
 )

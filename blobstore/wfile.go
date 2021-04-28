@@ -5,7 +5,7 @@ import (
 	"hash"
 	"io"
 
-	"gnd.la/blobstore/driver"
+	"gondola/blobstore/driver"
 )
 
 // WFile represents a file in the blobstore

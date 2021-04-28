@@ -22,24 +22,24 @@ import (
 	"text/template/parse"
 	"time"
 
-	"gnd.la/app/cookies"
-	"gnd.la/app/profile"
-	"gnd.la/blobstore"
-	"gnd.la/cache"
-	"gnd.la/crypto/cryptoutil"
-	"gnd.la/crypto/hashutil"
-	"gnd.la/encoding/codec"
-	"gnd.la/internal"
-	"gnd.la/internal/devutil/devserver"
-	"gnd.la/internal/runtimeutil"
-	"gnd.la/internal/templateutil"
-	"gnd.la/kvs"
-	"gnd.la/log"
-	"gnd.la/net/mail"
-	"gnd.la/orm"
-	"gnd.la/template"
-	"gnd.la/template/assets"
-	"gnd.la/util/stringutil"
+	"gondola/app/cookies"
+	"gondola/app/profile"
+	"gondola/blobstore"
+	"gondola/cache"
+	"gondola/crypto/cryptoutil"
+	"gondola/crypto/hashutil"
+	"gondola/encoding/codec"
+	"gondola/internal"
+	"gondola/internal/devutil/devserver"
+	"gondola/internal/runtimeutil"
+	"gondola/internal/templateutil"
+	"gondola/kvs"
+	"gondola/log"
+	"gondola/net/mail"
+	"gondola/orm"
+	"gondola/template"
+	"gondola/template/assets"
+	"gondola/util/stringutil"
 
 	"github.com/rainycape/vfs"
 )
@@ -141,7 +141,7 @@ type App struct {
 	RecoverHandlers   []RecoverHandler
 
 	// Logger to use when logging requests. By default, it's
-	// gnd.la/log.Std, but you can set it to nil to avoid
+	// gondola/log.Std, but you can set it to nil to avoid
 	// logging at all and gain a bit more of performance.
 	Logger *log.Logger
 
@@ -268,7 +268,7 @@ func (app *App) AddRecoverHandler(rh RecoverHandler) {
 }
 
 // Include should be considered a private API. It's only exported so
-// gnd.la/app/reusableapp can call into it.
+// gondola/app/reusableapp can call into it.
 func (app *App) Include(prefix string, name string, included *App, containerTemplate string) {
 	if err := app.include(prefix, name, included, containerTemplate); err != nil {
 		panic(err)
@@ -472,7 +472,7 @@ func (app *App) AssetsManager() *assets.Manager {
 }
 
 // SetAssetsManager sets the static assets manager for the app. See
-// the documention on gnd.la/template/assets.Manager for further information.
+// the documention on gondola/template/assets.Manager for further information.
 func (app *App) SetAssetsManager(manager *assets.Manager) {
 	app.assetsManager = manager
 }
@@ -520,7 +520,7 @@ func (app *App) AddTemplateVars(vars template.VarMap) {
 }
 
 // AddTemplatePlugin adds a *template.Plugin which will be added to
-// all templates rendered by this app. See gnd.la/template.Plugin for
+// all templates rendered by this app. See gondola/template.Plugin for
 // more information.
 func (app *App) AddTemplatePlugin(plugin *template.Plugin) {
 	app.templatePlugins = append(app.templatePlugins, plugin)
@@ -531,7 +531,7 @@ func (app *App) AddTemplatePlugin(plugin *template.Plugin) {
 // See also App.AddTemplatePlugin.
 func (app *App) LoadTemplatePlugin(name string, pos assets.Position) error {
 	tmpl := template.New(app.templatesFS, app.assetsManager)
-	// Functions defined by gnd.la/app.Template
+	// Functions defined by gondola/app.Template
 	tmpl.RawFuncs(map[string]interface{}{
 		"t":       nop,
 		"tn":      nop,
@@ -885,7 +885,7 @@ func (app *App) MustListenAndServe() {
 }
 
 // Cache returns this app's cache connection, using
-// DefaultCache(). Use gnd.la/config to change the default
+// DefaultCache(). Use gondola/config to change the default
 // cache. The cache.Cache is initialized only once and shared
 // among all requests and tasks served from this app.
 // On App Engine, this method always returns an error. Use
@@ -896,7 +896,7 @@ func (app *App) Cache() (*cache.Cache, error) {
 
 // App returns this app's ORM connection, using the
 // default database parameters, as returned by DefaultDatabase().
-// Use gnd.la/config to change the default ORM. The orm.Orm
+// Use gondola/config to change the default ORM. The orm.Orm
 // is initialized only once and shared among all requests and
 // tasks served from this app. On App Engine, this method always
 // returns an error. Use Context.Orm instead. To perform ORM
@@ -950,8 +950,8 @@ func (app *App) openOrm() (*orm.Orm, error) {
 
 // Blobstore returns a blobstore using the default blobstore
 // parameters, as returned by DefaultBlobstore(). Use
-// gnd.la/config to change the default blobstore. See
-// gnd.la/blobstore for further information on using the blobstore.
+// gondola/config to change the default blobstore. See
+// gondola/blobstore for further information on using the blobstore.
 // Note that this function does not work on App Engine. Use Context.Blobstore
 // instead.
 func (app *App) Blobstore() (*blobstore.Blobstore, error) {
@@ -1391,7 +1391,7 @@ func (app *App) EncryptSigner(salt []byte) (*cryptoutil.EncryptSigner, error) {
 }
 
 // Prepare is automatically called for you. This function is
-// only exposed because the gnd.la/app/tester package needs
+// only exposed because the gondola/app/tester package needs
 // to call it to set the App up without making it listen on
 // a port.
 func (app *App) Prepare() error {
@@ -1460,7 +1460,7 @@ func (app *App) Config() *Config {
 // Transform transforms all the registered handlers using the given
 // Transformer. Note that handlers registered after this call won't
 // be transformed. This function might be used to cache an entire
-// App using gnd.la/cache/layer.
+// App using gondola/cache/layer.
 func (app *App) Transform(tr Transformer) {
 	for _, v := range app.handlers {
 		v.handler = tr(v.handler)
@@ -1473,7 +1473,7 @@ func New() *App {
 }
 
 // NewWithConfig returns a new App initialized with the given config. If config
-// is nil, the default configuration (exposed via gnd.la/config) is
+// is nil, the default configuration (exposed via gondola/config) is
 // used instead.
 func NewWithConfig(config *Config) *App {
 	cfg := config

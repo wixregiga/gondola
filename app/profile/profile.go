@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"gnd.la/log"
+	"gondola/log"
 )
 
 const On = profileIsOn

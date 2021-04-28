@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"gnd.la/net/httpclient"
+	"gondola/net/httpclient"
 )
 
 const (

@@ -1,7 +1,7 @@
 package i18n
 
 import (
-	"gnd.la/util/stringutil"
+	"gondola/util/stringutil"
 )
 
 // TranslatableString is the interface implemented

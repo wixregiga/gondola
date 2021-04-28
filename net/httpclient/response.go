@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"net/url"
 
-	"gnd.la/net/urlutil"
+	"gondola/net/urlutil"
 )
 
 // Response is a thin wrapper around *http.Response,

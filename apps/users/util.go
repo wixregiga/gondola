@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"strconv"
 
-	"gnd.la/app"
-	"gnd.la/i18n"
-	"gnd.la/net/mail"
-	"gnd.la/orm"
+	"gondola/app"
+	"gondola/i18n"
+	"gondola/net/mail"
+	"gondola/orm"
 )
 
 func FindFreeUsername(ctx *app.Context, username string) string {

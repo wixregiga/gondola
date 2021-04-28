@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sync"
 
-	"gnd.la/net/oauth"
+	"gondola/net/oauth"
 )
 
 var pendingTokens struct {

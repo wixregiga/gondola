@@ -5,7 +5,7 @@ package driver
 import (
 	"net/http"
 
-	"gnd.la/config"
+	"gondola/config"
 )
 
 var (
@@ -21,7 +21,7 @@ type Driver interface {
 	Close() error
 }
 
-// Iter is the same interface as gnd.la/blobstore.Iter. See its
+// Iter is the same interface as gondola/blobstore.Iter. See its
 // documentation.
 type Iter interface {
 	Next(id *string) bool

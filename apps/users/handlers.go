@@ -9,13 +9,13 @@ import (
 	"strings"
 	"time"
 
-	"gnd.la/app"
-	"gnd.la/crypto/password"
-	"gnd.la/form"
-	"gnd.la/i18n"
-	"gnd.la/net/mail"
-	"gnd.la/orm"
-	"gnd.la/util/stringutil"
+	"gondola/app"
+	"gondola/crypto/password"
+	"gondola/form"
+	"gondola/i18n"
+	"gondola/net/mail"
+	"gondola/orm"
+	"gondola/util/stringutil"
 )
 
 var (
@@ -48,7 +48,7 @@ const (
 )
 
 var (
-	Salt                = []byte("gnd.la/apps/users")
+	Salt                = []byte("gondola/apps/users")
 	PasswordResetExpiry = 24 * time.Hour
 	SignInHandlerName   = app.SignInHandlerName
 

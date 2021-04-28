@@ -5,8 +5,8 @@ package runtimeutil
 import (
 	"debug/gosym"
 	"fmt"
-	"gnd.la/html"
-	"gnd.la/util/types"
+	"gondola/html"
+	"gondola/util/types"
 	"math"
 	"reflect"
 	"runtime"

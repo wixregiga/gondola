@@ -5,7 +5,7 @@ import (
 	"crypto/sha1"
 	"crypto/subtle"
 	"errors"
-	"gnd.la/encoding/base64"
+	"gondola/encoding/base64"
 	"hash"
 	"strings"
 )

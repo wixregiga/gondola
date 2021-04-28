@@ -17,14 +17,14 @@ import (
 	"strings"
 	"text/template/parse"
 
-	"gnd.la/app/profile"
-	"gnd.la/html"
-	"gnd.la/internal/templateutil"
-	"gnd.la/log"
-	"gnd.la/template/assets"
-	htmltemplate "gnd.la/template/internal/htmltemplate"
-	"gnd.la/util/pathutil"
-	"gnd.la/util/stringutil"
+	"gondola/app/profile"
+	"gondola/html"
+	"gondola/internal/templateutil"
+	"gondola/log"
+	"gondola/template/assets"
+	htmltemplate "gondola/template/internal/htmltemplate"
+	"gondola/util/pathutil"
+	"gondola/util/stringutil"
 
 	"github.com/rainycape/vfs"
 )
@@ -933,7 +933,7 @@ func (t *Template) addHtmlEscaping() {
 	}
 
 	// Don't care about errors here, since the differences between
-	// the execution models of text/template and gnd.la/template will
+	// the execution models of text/template and gondola/template will
 	// almost always cause errors (specially due to functions which
 	// receive arguments not explicitely mentioned in the template).
 	t.tmpl.Execute(ioutil.Discard, nil)
@@ -1118,7 +1118,7 @@ func DefaultVFS() vfs.VFS {
 
 // New returns a new template with the given VFS and assets
 // manager. Please, refer to the documention in github.com/rainycape/vfs
-// and gnd.la/template/assets for further information in those types.
+// and gondola/template/assets for further information in those types.
 // If the fs is nil, DefaultVFS() will be used.
 func New(fs vfs.VFS, manager *assets.Manager) *Template {
 	if fs == nil {

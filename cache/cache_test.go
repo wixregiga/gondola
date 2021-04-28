@@ -8,11 +8,11 @@ import (
 	"testing"
 	"time"
 
-	_ "gnd.la/cache/driver/memcache"
-	_ "gnd.la/cache/driver/redis"
-	"gnd.la/config"
-	_ "gnd.la/encoding/codec/msgpack"
-	"gnd.la/log"
+	_ "gondola/cache/driver/memcache"
+	_ "gondola/cache/driver/redis"
+	"gondola/config"
+	_ "gondola/encoding/codec/msgpack"
+	"gondola/log"
 )
 
 type T interface {

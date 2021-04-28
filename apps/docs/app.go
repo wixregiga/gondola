@@ -1,10 +1,10 @@
 package docs
 
 import (
-	"gnd.la/app"
-	"gnd.la/app/reusableapp"
-	"gnd.la/apps/docs/doc"
-	_ "gnd.la/template/assets/sass" // import the scss compiler for docs.scss
+	"gondola/app"
+	"gondola/app/reusableapp"
+	"gondola/apps/docs/doc"
+	_ "gondola/template/assets/sass" // import the scss compiler for docs.scss
 )
 
 // Group represents a group of packages to be displayed under the same

@@ -8,9 +8,9 @@ import (
 	"strings"
 	"text/template/parse"
 
-	"gnd.la/internal/runtimeutil"
-	"gnd.la/util/stringutil"
-	"gnd.la/util/types"
+	"gondola/internal/runtimeutil"
+	"gondola/util/stringutil"
+	"gondola/util/types"
 )
 
 var (

@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"net/url"
 
-	"gnd.la/app"
-	"gnd.la/social/facebook"
-	"gnd.la/social/pinterest"
-	"gnd.la/social/twitter"
+	"gondola/app"
+	"gondola/social/facebook"
+	"gondola/social/pinterest"
+	"gondola/social/twitter"
 )
 
 func Share(ctx *app.Context, s Service, item *Item, config interface{}) (interface{}, error) {

@@ -4,14 +4,15 @@ import (
 	"errors"
 	"io"
 
-	"gnd.la/app/profile"
-	"gnd.la/internal/devutil/devassets"
-	"gnd.la/internal/templateutil"
-	"gnd.la/template"
-	"gnd.la/template/assets"
+	"gondola/app/profile"
+	"gondola/internal/devutil/devassets"
+	"gondola/internal/templateutil"
+	"gondola/template"
+	"gondola/template/assets"
+
+	"gondola/internal/devutil/devserver"
 
 	"github.com/rainycape/vfs"
-	"gnd.la/internal/devutil/devserver"
 )
 
 var (
@@ -33,7 +34,7 @@ var (
 
 type TemplateProcessor func(*template.Template) (*template.Template, error)
 
-// Template is a thin wrapper around gnd.la/template.Template, which
+// Template is a thin wrapper around gondola/template.Template, which
 // simplifies execution, provides extra functions, like URL
 // reversing and translations, and always passes the current *Context
 // as the template Context.

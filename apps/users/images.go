@@ -10,9 +10,9 @@ import (
 	"reflect"
 	"strings"
 
-	"gnd.la/app"
-	"gnd.la/internal/httpserve"
-	"gnd.la/net/httpclient"
+	"gondola/app"
+	"gondola/internal/httpserve"
+	"gondola/net/httpclient"
 )
 
 var (

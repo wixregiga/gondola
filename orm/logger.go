@@ -1,7 +1,7 @@
 package orm
 
 import (
-	"gnd.la/log"
+	"gondola/log"
 )
 
 type Logger interface {

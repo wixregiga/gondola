@@ -6,11 +6,11 @@ import (
 	"net/http"
 	"os"
 
-	"gnd.la/app"
-	"gnd.la/cache"
-	"gnd.la/encoding/codec"
-	"gnd.la/internal"
-	"gnd.la/log"
+	"gondola/app"
+	"gondola/cache"
+	"gondola/encoding/codec"
+	"gondola/internal"
+	"gondola/log"
 )
 
 var (

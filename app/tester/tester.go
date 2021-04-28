@@ -45,9 +45,9 @@ import (
 	"testing"
 	"time"
 
-	"gnd.la/app"
-	"gnd.la/internal"
-	"gnd.la/util/types"
+	"gondola/app"
+	"gondola/internal"
+	"gondola/util/types"
 )
 
 const (

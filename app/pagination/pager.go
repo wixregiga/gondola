@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"gnd.la/app"
+	"gondola/app"
 )
 
 // Pager implements the paginator.Pager interface, using
@@ -72,7 +72,7 @@ func NewPager(ctx *app.Context) (*Pager, error) {
 	}, nil
 }
 
-// URL returns the given page URL by using gnd.la/app.Context.Reverse.
+// URL returns the given page URL by using gondola/app.Context.Reverse.
 func (p *Pager) URL(page int) string {
 	params := p.Parameters
 	if page != 1 {

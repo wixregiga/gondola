@@ -4,7 +4,7 @@ import (
 	"io"
 	"strings"
 
-	"gnd.la/util/types"
+	"gondola/util/types"
 )
 
 type Attrs map[string]string

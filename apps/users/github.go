@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"time"
 
-	"gnd.la/app"
-	"gnd.la/net/oauth2"
+	"gondola/app"
+	"gondola/net/oauth2"
 )
 
 type Github struct {

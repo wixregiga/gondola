@@ -19,19 +19,19 @@ var (
 		{"http://www.gondolaweb.com", "/", true},
 		{"http://www.gondolaweb.com", "/foo", true},
 		{"http://www.gondolaweb.com", "../anotherhost.com", true},
-		{"http://www.gondolaweb.com", "//gnd.la", false},
-		{"//gnd.la", "//gnd.la", true},
-		{"//www.gondolaweb.com", "//gnd.la.com", false},
+		{"http://www.gondolaweb.com", "//gondola", false},
+		{"//gondola", "//gondola", true},
+		{"//www.gondolaweb.com", "//gondola.com", false},
 		{"http://www.gondolaweb.com", "https://twitter.com", false},
 		{"http://www.gondolaweb.com", "https://www.gondolaweb.com", true},
 	}
 
 	joinTests = []joinTest{
-		{"http://gnd.la", "foo", "http://gnd.la/foo"},
-		{"http://gnd.la/bar", "foo", "http://gnd.la/foo"},
-		{"http://gnd.la/bar/", "foo", "http://gnd.la/bar/foo"},
-		{"http://gnd.la/bar/", "/foo/", "http://gnd.la/foo/"},
-		{"//gnd.la/bar/", "/foo/", "//gnd.la/foo/"},
+		{"http://gondola", "foo", "http://gondola/foo"},
+		{"http://gondola/bar", "foo", "http://gondola/foo"},
+		{"http://gondola/bar/", "foo", "http://gondola/bar/foo"},
+		{"http://gondola/bar/", "/foo/", "http://gondola/foo/"},
+		{"//gondola/bar/", "/foo/", "//gondola/foo/"},
 	}
 )
 

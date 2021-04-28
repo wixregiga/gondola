@@ -6,14 +6,14 @@ import (
 	"errors"
 	"strings"
 
-	"gnd.la/app"
-	"gnd.la/crypto/cryptoutil"
-	"gnd.la/i18n"
-	"gnd.la/util/stringutil"
+	"gondola/app"
+	"gondola/crypto/cryptoutil"
+	"gondola/i18n"
+	"gondola/util/stringutil"
 )
 
 const (
-	csrfSalt          = "gnd.la/form.csrf-salt"
+	csrfSalt          = "gondola/form.csrf-salt"
 	randomSaltLength  = 32
 	randomValueLength = 64
 )

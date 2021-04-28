@@ -7,9 +7,9 @@ import (
 	"net/url"
 	"path"
 
-	"gnd.la/crypto/hashutil"
-	"gnd.la/log"
-	"gnd.la/net/urlutil"
+	"gondola/crypto/hashutil"
+	"gondola/log"
+	"gondola/net/urlutil"
 )
 
 func Script(name string) *Asset {

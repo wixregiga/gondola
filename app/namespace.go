@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"gnd.la/internal/runtimeutil"
+	"gondola/internal/runtimeutil"
 )
 
 type namespace struct {

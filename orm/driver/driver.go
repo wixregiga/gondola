@@ -3,7 +3,7 @@ package driver
 import (
 	"reflect"
 
-	"gnd.la/config"
+	"gondola/config"
 )
 
 var (

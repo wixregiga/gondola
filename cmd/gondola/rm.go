@@ -8,7 +8,7 @@ import (
 
 	"github.com/rainycape/command"
 
-	"gnd.la/log"
+	"gondola/log"
 )
 
 func rmGenCommand(args *command.Args) error {

@@ -2,10 +2,10 @@ package doc
 
 import (
 	"bytes"
-	"gnd.la/apps/docs/doc/printer"
 	"go/ast"
 	"go/doc"
 	"go/token"
+	"gondola/apps/docs/doc/printer"
 	"html/template"
 	"strings"
 )

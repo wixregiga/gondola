@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"gnd.la/net/httpclient"
+	"gondola/net/httpclient"
 )
 
 func (a *App) User(name string, accessToken string) (*User, error) {

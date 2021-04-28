@@ -8,7 +8,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"gnd.la/blobstore/driver"
+	"gondola/blobstore/driver"
 )
 
 var (

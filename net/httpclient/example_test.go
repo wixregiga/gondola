@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"gnd.la/net/httpclient"
+	"gondola/net/httpclient"
 )
 
 func ExampleIter() {

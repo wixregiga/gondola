@@ -2,8 +2,8 @@ package form
 
 import (
 	"fmt"
-	"gnd.la/i18n"
-	"gnd.la/util/structs"
+	"gondola/i18n"
+	"gondola/util/structs"
 	"reflect"
 )
 

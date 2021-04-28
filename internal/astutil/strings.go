@@ -1,11 +1,11 @@
 package astutil
 
 import (
-	"gnd.la/internal/pkgutil"
-	"gnd.la/util/stringutil"
-	"gnd.la/util/structs"
 	"go/ast"
 	"go/token"
+	"gondola/internal/pkgutil"
+	"gondola/util/stringutil"
+	"gondola/util/structs"
 )
 
 type String struct {

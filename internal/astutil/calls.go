@@ -1,15 +1,15 @@
 package astutil
 
 import (
-	"gnd.la/internal/pkgutil"
 	"go/ast"
 	"go/token"
+	"gondola/internal/pkgutil"
 	"strings"
 )
 
 // Calls returns the calls to a given function or method
-// specified as a qualified name (e.g. gnd.la/i18n.T or
-// gnd.la/app.Context.T).
+// specified as a qualified name (e.g. gondola/i18n.T or
+// gondola/app.Context.T).
 func Calls(fset *token.FileSet, f *ast.File, fn string) ([]*ast.CallExpr, error) {
 	pkg, fname := pkgutil.SplitQualifiedName(fn)
 	pname, ok := Imports(f, pkg)

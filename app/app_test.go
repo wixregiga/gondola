@@ -2,8 +2,8 @@ package app_test
 
 import (
 	"fmt"
-	"gnd.la/app"
-	"gnd.la/app/tester"
+	"gondola/app"
+	"gondola/app/tester"
 	"testing"
 	"time"
 )

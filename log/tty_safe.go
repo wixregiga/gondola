@@ -5,7 +5,7 @@ package log
 import (
 	"io"
 
-	"gnd.la/internal"
+	"gondola/internal"
 )
 
 func isatty(w io.Writer) bool {

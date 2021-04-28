@@ -9,17 +9,17 @@ import (
 	"reflect"
 	"strings"
 
-	"gnd.la/blobstore/driver"
-	_ "gnd.la/blobstore/driver/file"
-	"gnd.la/config"
-	"gnd.la/log"
+	"gondola/blobstore/driver"
+	_ "gondola/blobstore/driver/file"
+	"gondola/config"
+	"gondola/log"
 )
 
 var (
 	imports = map[string]string{
-		"file":   "gnd.la/blobstore/driver/file",
-		"gridfs": "gnd.la/blobstore/driver/gridfs",
-		"s3":     "gnd.la/blobstore/driver/s3",
+		"file":   "gondola/blobstore/driver/file",
+		"gridfs": "gondola/blobstore/driver/gridfs",
+		"s3":     "gondola/blobstore/driver/s3",
 	}
 
 	// ErrNotIterable indicates that the current blobstore driver

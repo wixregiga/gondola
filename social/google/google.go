@@ -4,8 +4,8 @@ import (
 	"errors"
 	"net/url"
 
-	"gnd.la/net/httpclient"
-	"gnd.la/net/oauth2"
+	"gondola/net/httpclient"
+	"gondola/net/oauth2"
 )
 
 const (

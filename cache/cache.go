@@ -6,19 +6,19 @@ import (
 	"reflect"
 	"strings"
 
-	"gnd.la/app/profile"
-	"gnd.la/cache/driver"
-	"gnd.la/config"
-	"gnd.la/encoding/codec"
-	"gnd.la/encoding/pipe"
-	"gnd.la/log"
+	"gondola/app/profile"
+	"gondola/cache/driver"
+	"gondola/config"
+	"gondola/encoding/codec"
+	"gondola/encoding/pipe"
+	"gondola/log"
 )
 
 var (
 	ErrNotFound = errors.New("item not found in cache")
 	imports     = map[string]string{
-		"memcache": "gnd.la/cache/driver/memcache",
-		"redis":    "gnd.la/cache/driver/redis",
+		"memcache": "gondola/cache/driver/memcache",
+		"redis":    "gondola/cache/driver/redis",
 	}
 )
 

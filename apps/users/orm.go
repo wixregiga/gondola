@@ -1,8 +1,8 @@
 package users
 
 import (
-	"gnd.la/orm"
-	"gnd.la/orm/query"
+	"gondola/orm"
+	"gondola/orm/query"
 )
 
 // ByUsername returns a query.Q which finds a user given its

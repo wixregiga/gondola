@@ -1,7 +1,7 @@
 package app
 
 import (
-	"gnd.la/signals"
+	"gondola/signals"
 )
 
 type appSignal struct {
@@ -19,12 +19,12 @@ func (s *appSignal) emit(app *App) {
 }
 
 // Signals declares the signals emitted by this package. See
-// gnd.la/signals for more information.
+// gondola/signals for more information.
 var Signals = struct {
-	// WillListen is emitted just before a *gnd.la/app.App will
+	// WillListen is emitted just before a *gondola/app.App will
 	// start listening.
 	WillListen *appSignal
-	// DidListen is emitted after a *gnd.la/app.App starts
+	// DidListen is emitted after a *gondola/app.App starts
 	// listening.
 	DidListen *appSignal
 	// WillPrepare is emitted at the beginning of App.Prepare.

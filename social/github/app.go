@@ -3,9 +3,9 @@ package github
 import (
 	"net/url"
 
-	"gnd.la/net/httpclient"
-	"gnd.la/net/oauth2"
-	"gnd.la/net/urlutil"
+	"gondola/net/httpclient"
+	"gondola/net/oauth2"
+	"gondola/net/urlutil"
 )
 
 const (

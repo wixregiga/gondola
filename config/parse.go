@@ -9,11 +9,11 @@ import (
 	"strconv"
 	"strings"
 
-	"gnd.la/form/input"
-	"gnd.la/internal"
-	"gnd.la/util/pathutil"
-	"gnd.la/util/stringutil"
-	"gnd.la/util/types"
+	"gondola/form/input"
+	"gondola/internal"
+	"gondola/util/pathutil"
+	"gondola/util/stringutil"
+	"gondola/util/types"
 )
 
 var (

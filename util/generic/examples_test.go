@@ -2,7 +2,7 @@ package generic_test
 
 import (
 	"fmt"
-	"gnd.la/util/generic"
+	"gondola/util/generic"
 )
 
 func ExampleSum() {

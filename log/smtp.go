@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"gnd.la/net/mail"
+	"gondola/net/mail"
 )
 
 type SmtpWriter struct {

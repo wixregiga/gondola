@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"gnd.la/template/assets"
+	"gondola/template/assets"
 
 	"github.com/rainycape/vfs"
 )

@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"gnd.la/util/stringutil"
+	"gondola/util/stringutil"
 
 	"github.com/rainycape/command"
 )

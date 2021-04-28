@@ -7,10 +7,10 @@ import (
 	"os"
 	"reflect"
 
-	"gnd.la/internal/devutil/devassets"
-	"gnd.la/kvs"
-	"gnd.la/template"
-	"gnd.la/template/assets"
+	"gondola/internal/devutil/devassets"
+	"gondola/kvs"
+	"gondola/template"
+	"gondola/template/assets"
 )
 
 const (

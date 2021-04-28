@@ -12,8 +12,8 @@ import (
 	"regexp"
 	"strings"
 
-	"gnd.la/log"
-	"gnd.la/util/formatutil"
+	"gondola/log"
+	"gondola/util/formatutil"
 )
 
 var (

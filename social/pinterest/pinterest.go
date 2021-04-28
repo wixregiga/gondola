@@ -11,8 +11,8 @@ import (
 
 	"golang.org/x/net/html"
 
-	"gnd.la/net/httpclient"
-	"gnd.la/util/stringutil"
+	"gondola/net/httpclient"
+	"gondola/util/stringutil"
 )
 
 var (

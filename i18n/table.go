@@ -1,7 +1,7 @@
 package i18n
 
 import (
-	"gnd.la/i18n/table"
+	"gondola/i18n/table"
 )
 
 // Tabler is the interface implemented by types

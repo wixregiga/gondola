@@ -1,8 +1,10 @@
 package template
 
-import "fmt"
-import "bytes"
-import "gnd.la/util/generic"
+import (
+	"bytes"
+	"fmt"
+	"gondola/util/generic"
+)
 
 type instructions []inst
 

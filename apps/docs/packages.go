@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"gnd.la/apps/docs/doc"
-	"gnd.la/log"
+	"gondola/apps/docs/doc"
+	"gondola/log"
 )
 
 var (

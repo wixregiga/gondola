@@ -1,7 +1,7 @@
 package driver
 
 import (
-	"gnd.la/config"
+	"gondola/config"
 )
 
 var ddrv *DummyDriver

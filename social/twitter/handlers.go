@@ -1,7 +1,7 @@
 package twitter
 
 import (
-	"gnd.la/app"
+	"gondola/app"
 )
 
 // Handler represents a function type which receives the

@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"gnd.la/net/httpclient"
+	"gondola/net/httpclient"
 )
 
 // TokenType indicates the type of oAuth 2 token.

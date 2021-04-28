@@ -8,12 +8,12 @@ import (
 	"strings"
 	"time"
 
-	"gnd.la/config"
-	"gnd.la/encoding/codec"
-	"gnd.la/orm/driver"
-	"gnd.la/orm/driver/sql"
-	"gnd.la/orm/index"
-	"gnd.la/util/structs"
+	"gondola/config"
+	"gondola/encoding/codec"
+	"gondola/orm/driver"
+	"gondola/orm/driver/sql"
+	"gondola/orm/index"
+	"gondola/util/structs"
 
 	_ "github.com/lib/pq"
 )

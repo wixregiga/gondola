@@ -13,8 +13,8 @@ import (
 	"fmt"
 	"time"
 
-	"gnd.la/cache/driver"
-	"gnd.la/config"
+	"gondola/cache/driver"
+	"gondola/config"
 
 	"github.com/garyburd/redigo/redis"
 )

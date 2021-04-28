@@ -2,9 +2,9 @@ package formutil
 
 import (
 	"fmt"
-	"gnd.la/app"
-	"gnd.la/form"
-	"gnd.la/html"
+	"gondola/app"
+	"gondola/form"
+	"gondola/html"
 	"io/ioutil"
 	"net/http"
 	"net/url"

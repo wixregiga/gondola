@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"reflect"
 
-	"gnd.la/app"
-	"gnd.la/net/oauth2"
-	"gnd.la/orm"
+	"gondola/app"
+	"gondola/net/oauth2"
+	"gondola/orm"
 )
 
 type SocialAccountType string

@@ -1,6 +1,6 @@
 // The articles command is used for easily managing article files.
 //
-// To install this tool, type go install gnd.la/apps/articles/cmd/articles.
+// To install this tool, type go install gondola/apps/articles/cmd/articles.
 //
 // Then, view its help and usage by typing:
 //
@@ -14,7 +14,7 @@ import (
 	"log"
 	"os"
 
-	"gnd.la/apps/articles/article"
+	"gondola/apps/articles/article"
 
 	"github.com/rainycape/command"
 )

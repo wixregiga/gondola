@@ -1,6 +1,6 @@
 language: go
 go:
     - 1.7
-go_import_path: gnd.la
+go_import_path: gondola
 env:
     - GONDOLA_ORM_MYSQL_CREDENTIALS="root:"

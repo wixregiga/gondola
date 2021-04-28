@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"gnd.la/config"
-	"gnd.la/log"
-	"gnd.la/orm/driver"
+	"gondola/config"
+	"gondola/log"
+	"gondola/orm/driver"
 )
 
 // Interface for orm openers, so we can run each individual
@@ -38,7 +38,7 @@ func funcName(f interface{}) string {
 }
 
 func testName(openerName string, f interface{}) string {
-	return openerName + "-" + strings.TrimPrefix(funcName(f), "gnd.la/orm.")
+	return openerName + "-" + strings.TrimPrefix(funcName(f), "gondola/orm.")
 }
 
 func runTest(t *testing.T, f func(*testing.T, *Orm)) {

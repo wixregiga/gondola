@@ -7,10 +7,10 @@
 //  .html, .txt, .md
 //
 // To load articles written in markdown (.md extension), your application must
-// import gnd.la/template/markdown, like e.g.
+// import gondola/template/markdown, like e.g.
 //
 //  import (
-//	    _ "gnd.la/template/markdown"
+//	    _ "gondola/template/markdown"
 //  )
 //
 // Each file is composed of first the article text and then a set of properties

@@ -6,9 +6,9 @@ import (
 	"go/build"
 	"path/filepath"
 
-	"gnd.la/i18n/po"
-	"gnd.la/i18n/table"
-	"gnd.la/internal/gen/genutil"
+	"gondola/i18n/po"
+	"gondola/i18n/table"
+	"gondola/internal/gen/genutil"
 )
 
 type CompileOptions struct {
@@ -22,7 +22,7 @@ func Compile(filename string, translations []*po.Po, opts *CompileOptions) error
 	if err == nil {
 		fmt.Fprintf(&buf, "package %s\n", p.Name)
 	}
-	buf.WriteString("import \"gnd.la/i18n/table\"\n")
+	buf.WriteString("import \"gondola/i18n/table\"\n")
 	buf.WriteString(genutil.AutogenString())
 	buf.WriteString("func init() {\n")
 	var defaultContext string

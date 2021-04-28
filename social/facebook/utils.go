@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"gnd.la/net/httpclient"
+	"gondola/net/httpclient"
 )
 
 func Code(r *http.Request) string {

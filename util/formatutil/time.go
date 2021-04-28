@@ -3,7 +3,7 @@ package formatutil
 import (
 	"time"
 
-	"gnd.la/i18n"
+	"gondola/i18n"
 )
 
 // DateStyle represents a style for formatting

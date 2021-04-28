@@ -10,12 +10,13 @@ package s3
 import (
 	"bytes"
 	"fmt"
-	"gnd.la/blobstore/driver"
-	"gnd.la/config"
-	"launchpad.net/goamz/aws"
-	"launchpad.net/goamz/s3"
+	"gondola/blobstore/driver"
+	"gondola/config"
 	"strings"
 	"sync"
+
+	"launchpad.net/goamz/aws"
+	"launchpad.net/goamz/s3"
 )
 
 // Avoid extra roundtrips to the server to make sure

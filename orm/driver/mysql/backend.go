@@ -7,13 +7,13 @@ import (
 	"strings"
 	"time"
 
-	"gnd.la/config"
-	"gnd.la/encoding/codec"
-	"gnd.la/orm/driver"
-	"gnd.la/orm/driver/sql"
-	"gnd.la/orm/index"
-	"gnd.la/util/structs"
-	"gnd.la/util/types"
+	"gondola/config"
+	"gondola/encoding/codec"
+	"gondola/orm/driver"
+	"gondola/orm/driver/sql"
+	"gondola/orm/index"
+	"gondola/util/structs"
+	"gondola/util/types"
 
 	_ "github.com/go-sql-driver/mysql"
 )

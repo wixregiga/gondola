@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
-	"gnd.la/app"
-	"gnd.la/internal/runtimeutil"
+	"gondola/app"
+	"gondola/internal/runtimeutil"
 )
 
 var running struct {

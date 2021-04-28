@@ -13,8 +13,8 @@ import (
 	"strings"
 	"time"
 
-	"gnd.la/form/input"
-	"gnd.la/util/stringutil"
+	"gondola/form/input"
+	"gondola/util/stringutil"
 
 	"github.com/rainycape/vfs"
 )

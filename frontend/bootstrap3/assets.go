@@ -3,7 +3,7 @@ package bootstrap3
 import (
 	"fmt"
 
-	"gnd.la/template/assets"
+	"gondola/template/assets"
 
 	"github.com/rainycape/semver"
 )

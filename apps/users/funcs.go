@@ -5,11 +5,11 @@ import (
 	"strconv"
 	"time"
 
-	"gnd.la/app"
-	"gnd.la/crypto/password"
-	"gnd.la/i18n"
-	"gnd.la/orm"
-	"gnd.la/orm/driver"
+	"gondola/app"
+	"gondola/crypto/password"
+	"gondola/i18n"
+	"gondola/orm"
+	"gondola/orm/driver"
 )
 
 var (

@@ -6,8 +6,8 @@ import (
 
 func TestSplit(t *testing.T) {
 	cases := map[string][]string{
-		"gnd.la/i18n.T":        {"gnd.la/i18n", "T"},
-		"gnd.la/app.Context.T": {"gnd.la/app", "Context.T"},
+		"gondola/i18n.T":        {"gondola/i18n", "T"},
+		"gondola/app.Context.T": {"gondola/app", "Context.T"},
 	}
 	for k, v := range cases {
 		pkg, name := SplitQualifiedName(k)
@@ -20,7 +20,7 @@ func TestSplit(t *testing.T) {
 
 func TestIsPackage(t *testing.T) {
 	cases := map[string]bool{
-		".": true,
+		".":                                  true,
 		"/this-path-hopefully-does-no-exist": false,
 	}
 	for k, v := range cases {

@@ -7,15 +7,15 @@ import (
 	"reflect"
 	"strconv"
 
-	"gnd.la/app"
-	"gnd.la/crypto/password"
-	"gnd.la/form/input"
-	"gnd.la/html"
-	"gnd.la/i18n"
-	"gnd.la/net/mail"
-	"gnd.la/util/stringutil"
-	"gnd.la/util/structs"
-	"gnd.la/util/types"
+	"gondola/app"
+	"gondola/crypto/password"
+	"gondola/form/input"
+	"gondola/html"
+	"gondola/i18n"
+	"gondola/net/mail"
+	"gondola/util/stringutil"
+	"gondola/util/structs"
+	"gondola/util/types"
 )
 
 //go:generate gondola compile-messages
@@ -724,7 +724,7 @@ func New(ctx *app.Context, values ...interface{}) *Form {
 //
 // If no Renderer is specified (either opts is nil or its Renderer field is
 // nil), DefaultRenderer will be used to instantiate a renderer. Some
-// packages from gnd.la/frontend, override DefaultRenderer when imported.
+// packages from gondola/frontend, override DefaultRenderer when imported.
 //
 // The values argument must contains pointers to structs.
 //

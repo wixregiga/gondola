@@ -4,9 +4,9 @@ import (
 	"path"
 	"strings"
 
-	"gnd.la/app"
-	"gnd.la/apps/articles/article"
-	"gnd.la/util/generic"
+	"gondola/app"
+	"gondola/apps/articles/article"
+	"gondola/util/generic"
 
 	"github.com/rainycape/vfs"
 )

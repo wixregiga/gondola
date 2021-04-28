@@ -3,8 +3,8 @@ package orm
 import (
 	"errors"
 
-	"gnd.la/orm/operation"
-	"gnd.la/orm/query"
+	"gondola/orm/operation"
+	"gondola/orm/query"
 )
 
 var (

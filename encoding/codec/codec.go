@@ -1,12 +1,12 @@
 // Package codec implements functions for encoding and decoding
 // objects in several formats
 //
-// Any registered codec can be used by both gnd.la/cache and
-// gnd.la/orm.
+// Any registered codec can be used by both gondola/cache and
+// gondola/orm.
 //
 // This package provides the "gob" and "json" codecs, which encode
 // the data using encoding/gob and encoding/json, respectivelly.
-// Check gnd.la/cache and gnd.la/orm to learn how to use codecs with
+// Check gondola/cache and gondola/orm to learn how to use codecs with
 // Gondola's cache and ORM.
 //
 // Users might define their own codecs by implementing a Codec
@@ -14,13 +14,13 @@
 package codec
 
 import (
-	"gnd.la/util/structs"
+	"gondola/util/structs"
 )
 
 var (
 	codecs  = map[string]*Codec{}
 	imports = map[string]string{
-		"msgpack": "gnd.la/encoding/codec/msgpack",
+		"msgpack": "gondola/encoding/codec/msgpack",
 	}
 )
 

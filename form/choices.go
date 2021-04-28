@@ -3,8 +3,8 @@ package form
 import (
 	"fmt"
 
-	"gnd.la/app"
-	"gnd.la/i18n"
+	"gondola/app"
+	"gondola/i18n"
 )
 
 const (

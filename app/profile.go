@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"gnd.la/app/profile"
-	"gnd.la/encoding/base64"
+	"gondola/app/profile"
+	"gondola/encoding/base64"
 )
 
 type profileInfo struct {

@@ -10,7 +10,7 @@ package pipe
 
 import (
 	"fmt"
-	"gnd.la/util/structs"
+	"gondola/util/structs"
 )
 
 var (

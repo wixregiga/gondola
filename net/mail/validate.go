@@ -5,7 +5,7 @@ import (
 	"net/mail"
 	"strings"
 
-	"gnd.la/internal"
+	"gondola/internal"
 )
 
 // Validate performs some basic email address validation on a given

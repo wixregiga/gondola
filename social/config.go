@@ -1,9 +1,9 @@
 package social
 
 import (
-	"gnd.la/social/facebook"
-	"gnd.la/social/pinterest"
-	"gnd.la/social/twitter"
+	"gondola/social/facebook"
+	"gondola/social/pinterest"
+	"gondola/social/twitter"
 )
 
 type FacebookConfig struct {

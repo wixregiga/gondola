@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"gnd.la/app"
+	"gondola/app"
 )
 
 const (

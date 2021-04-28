@@ -1,7 +1,7 @@
 package twitter
 
 import (
-	"gnd.la/config"
+	"gondola/config"
 	"strings"
 	"testing"
 )

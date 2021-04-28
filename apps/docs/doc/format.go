@@ -2,9 +2,9 @@ package doc
 
 import (
 	"bytes"
-	"gnd.la/html"
 	"go/printer"
 	"go/token"
+	"gondola/html"
 	"regexp"
 )
 

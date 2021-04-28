@@ -1,8 +1,8 @@
 package orm
 
 import (
-	"gnd.la/app/profile"
-	"gnd.la/orm/driver"
+	"gondola/app/profile"
+	"gondola/orm/driver"
 )
 
 type Iter struct {

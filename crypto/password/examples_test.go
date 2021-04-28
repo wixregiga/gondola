@@ -2,7 +2,7 @@ package password_test
 
 import (
 	"fmt"
-	"gnd.la/crypto/password"
+	"gondola/crypto/password"
 )
 
 func ExampleNew() {

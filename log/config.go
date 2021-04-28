@@ -1,8 +1,8 @@
 package log
 
 import (
-	"gnd.la/config"
-	"gnd.la/net/mail"
+	"gondola/config"
+	"gondola/net/mail"
 )
 
 var logConfig struct {

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"gnd.la/i18n"
+	"gondola/i18n"
 )
 
 var (

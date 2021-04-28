@@ -4,9 +4,9 @@ import (
 	"reflect"
 	"regexp"
 
-	"gnd.la/i18n"
-	"gnd.la/util/structs"
-	"gnd.la/util/types"
+	"gondola/i18n"
+	"gondola/util/structs"
+	"gondola/util/types"
 )
 
 //go:generate gondola compile-messages

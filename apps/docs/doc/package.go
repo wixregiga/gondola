@@ -16,10 +16,10 @@ import (
 	"sort"
 	"strings"
 
-	"gnd.la/apps/docs/doc/printer"
-	"gnd.la/internal/astutil"
-	"gnd.la/internal/pkgutil"
-	"gnd.la/util/generic"
+	"gondola/apps/docs/doc/printer"
+	"gondola/internal/astutil"
+	"gondola/internal/pkgutil"
+	"gondola/util/generic"
 )
 
 var (
@@ -497,7 +497,7 @@ func (p *Package) scopeParameters(node interface{}) (string, map[string]struct{}
 func (p *Package) ScopedHTML(text string, scope interface{}) template.HTML {
 	// TODO: When linkifying a method doc, linkify references to other
 	// methods in the form <receiver_var_name>.method. See
-	// gnd.la/util/semver for an example.
+	// gondola/util/semver for an example.
 	name, ignored := p.scopeParameters(scope)
 	return p.html(text, name, ignored)
 }

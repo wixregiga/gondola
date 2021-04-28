@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"gnd.la/kvs"
+	"gondola/kvs"
 )
 
 var (

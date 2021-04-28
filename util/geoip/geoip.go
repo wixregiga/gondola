@@ -7,7 +7,7 @@
 package geoip
 
 import (
-	"gnd.la/app"
+	"gondola/app"
 )
 
 // Country returns the country for the IP address associated

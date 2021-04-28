@@ -7,8 +7,8 @@ import (
 
 	"github.com/rainycape/vfs"
 
-	"gnd.la/util/stringutil"
-	"gnd.la/util/vfsutil"
+	"gondola/util/stringutil"
+	"gondola/util/vfsutil"
 )
 
 func openVFS(appName string, abspath string, baked string) (vfsutil.VFS, error) {

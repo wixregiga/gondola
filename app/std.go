@@ -5,10 +5,10 @@ package app
 import (
 	"fmt"
 
-	"gnd.la/blobstore"
-	"gnd.la/cache"
-	"gnd.la/net/mail"
-	"gnd.la/orm"
+	"gondola/blobstore"
+	"gondola/cache"
+	"gondola/net/mail"
+	"gondola/orm"
 )
 
 // Methods that need to be redefined on appengine

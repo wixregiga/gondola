@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"strings"
 
-	"gnd.la/net/oauth2"
+	"gondola/net/oauth2"
 )
 
 func (app *App) Extend(token *oauth2.Token) (*oauth2.Token, error) {

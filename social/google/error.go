@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"gnd.la/net/httpclient"
+	"gondola/net/httpclient"
 )
 
 type Error struct {

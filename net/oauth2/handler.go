@@ -3,8 +3,8 @@ package oauth2
 import (
 	"net/url"
 
-	"gnd.la/app"
-	"gnd.la/util/stringutil"
+	"gondola/app"
+	"gondola/util/stringutil"
 )
 
 const (

@@ -1,8 +1,8 @@
 package pagination
 
 import (
-	"gnd.la/app"
-	"gnd.la/html/paginator"
+	"gondola/app"
+	"gondola/html/paginator"
 )
 
 // Pattern returns the pattern required to append to
@@ -20,7 +20,7 @@ import (
 //
 //  myapp.HandleNamed("/popular/" + pagination.Pattern("", "/") + "$", PopularHandler, "popular")
 //
-// Where myapp is a gnd.la/app.App instance.
+// Where myapp is a gondola/app.App instance.
 func Pattern(prefix string, suffix string) string {
 	return "(?:" + prefix + "(?P<page>\\d+)" + suffix + ")?"
 }

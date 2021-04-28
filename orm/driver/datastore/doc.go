@@ -5,7 +5,7 @@
 // the App Engine Go SDK. To enable the driver, import its package:
 //
 //  import (
-//      _ "gnd.la/orm/driver/datastore"
+//      _ "gondola/orm/driver/datastore"
 //  )
 //
 // The URL format for this package is:

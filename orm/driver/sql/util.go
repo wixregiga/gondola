@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"reflect"
 
-	"gnd.la/orm/index"
+	"gondola/orm/index"
 )
 
 func isNil(v interface{}) bool {

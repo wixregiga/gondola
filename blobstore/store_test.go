@@ -12,11 +12,11 @@ import (
 	"strings"
 	"testing"
 
-	_ "gnd.la/blobstore/driver/file"
-	_ "gnd.la/blobstore/driver/gridfs"
-	_ "gnd.la/blobstore/driver/leveldb"
-	_ "gnd.la/blobstore/driver/s3"
-	"gnd.la/config"
+	_ "gondola/blobstore/driver/file"
+	_ "gondola/blobstore/driver/gridfs"
+	_ "gondola/blobstore/driver/leveldb"
+	_ "gondola/blobstore/driver/s3"
+	"gondola/config"
 )
 
 const (

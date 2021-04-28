@@ -8,8 +8,8 @@ import (
 	"appengine"
 	"appengine/memcache"
 
-	"gnd.la/cache/driver"
-	"gnd.la/config"
+	"gondola/cache/driver"
+	"gondola/config"
 )
 
 type memcacheDriver struct {

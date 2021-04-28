@@ -1,8 +1,8 @@
 package form
 
 import (
-	"gnd.la/app"
-	"gnd.la/html"
+	"gondola/app"
+	"gondola/html"
 )
 
 // AddOnPosition indicates the position of the addon

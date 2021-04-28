@@ -1,7 +1,7 @@
 package config
 
 import (
-	"gnd.la/util/types"
+	"gondola/util/types"
 	"reflect"
 )
 

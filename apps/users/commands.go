@@ -5,9 +5,9 @@ import (
 	"os"
 	"text/tabwriter"
 
-	"gnd.la/app"
-	"gnd.la/commands"
-	"gnd.la/crypto/password"
+	"gondola/app"
+	"gondola/commands"
+	"gondola/crypto/password"
 
 	"github.com/bgentry/speakeasy"
 )

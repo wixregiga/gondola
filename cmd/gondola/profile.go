@@ -12,11 +12,11 @@ import (
 	"strings"
 	"time"
 
-	"gnd.la/app/profile"
-	"gnd.la/crypto/cryptoutil"
-	"gnd.la/encoding/base64"
-	"gnd.la/log"
-	"gnd.la/util/stringutil"
+	"gondola/app/profile"
+	"gondola/crypto/cryptoutil"
+	"gondola/encoding/base64"
+	"gondola/log"
+	"gondola/util/stringutil"
 
 	"github.com/howeyc/gopass"
 	"github.com/rainycape/command"
@@ -27,7 +27,7 @@ var (
 	errAuthFailed   = errors.New("authentication failed")
 )
 
-// copied from gnd.la/app/profile.go, keep in sync
+// copied from gondola/app/profile.go, keep in sync
 type profileInfo struct {
 	Elapsed time.Duration     `json:"e"`
 	Timings []*profile.Timing `json:"t"`

@@ -3,10 +3,10 @@ package users
 import (
 	"reflect"
 
-	"gnd.la/app"
-	"gnd.la/crypto/password"
-	"gnd.la/form"
-	"gnd.la/i18n"
+	"gondola/app"
+	"gondola/crypto/password"
+	"gondola/form"
+	"gondola/i18n"
 )
 
 var (

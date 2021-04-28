@@ -9,8 +9,8 @@ import (
 	"go/token"
 	"strings"
 
-	"gnd.la/internal/astutil"
-	"gnd.la/template"
+	"gondola/internal/astutil"
+	"gondola/template"
 )
 
 const (

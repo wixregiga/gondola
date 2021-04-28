@@ -4,17 +4,17 @@ import (
 	"fmt"
 	"reflect"
 
-	"gnd.la/app"
-	"gnd.la/app/reusableapp"
-	"gnd.la/social/facebook"
-	"gnd.la/social/github"
-	"gnd.la/social/google"
-	"gnd.la/social/twitter"
-	"gnd.la/template"
-	"gnd.la/template/assets"
-	_ "gnd.la/template/assets/sass" // import the sass compiler for the scss assets
-	"gnd.la/util/generic"
-	"gnd.la/util/structs"
+	"gondola/app"
+	"gondola/app/reusableapp"
+	"gondola/social/facebook"
+	"gondola/social/github"
+	"gondola/social/google"
+	"gondola/social/twitter"
+	"gondola/template"
+	"gondola/template/assets"
+	_ "gondola/template/assets/sass" // import the sass compiler for the scss assets
+	"gondola/util/generic"
+	"gondola/util/structs"
 )
 
 type appData struct {

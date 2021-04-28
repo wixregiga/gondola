@@ -14,9 +14,9 @@ import (
 
 	"path/filepath"
 
-	_ "gnd.la/orm/driver/mysql"
-	_ "gnd.la/orm/driver/postgres"
-	_ "gnd.la/orm/driver/sqlite"
+	_ "gondola/orm/driver/mysql"
+	_ "gondola/orm/driver/postgres"
+	_ "gondola/orm/driver/sqlite"
 )
 
 // This file has tests which run all the tests for

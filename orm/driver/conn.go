@@ -1,8 +1,8 @@
 package driver
 
 import (
-	"gnd.la/orm/operation"
-	"gnd.la/orm/query"
+	"gondola/orm/operation"
+	"gondola/orm/query"
 )
 
 type QueryOptions struct {

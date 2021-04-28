@@ -19,10 +19,10 @@
 // package for information on each one of them, alternatively, check the
 // example down this page.
 //
-// If you're using gnd.la/app.App.ListenAndServe or gnd.la/app.App.MustListenAndServe,
+// If you're using gondola/app.App.ListenAndServe or gondola/app.App.MustListenAndServe,
 // then you don't need to do anything else, since those functions will check if
 // a command was provided, run it and exit.
-// Alternatively, you can also call commands.Execute with a gnd.la/app.App
+// Alternatively, you can also call commands.Execute with a gondola/app.App
 // instance manually if you're not using the functions previously mentioned
 // or, if for some reason, you want to check for commands
 // sooner. e.g.

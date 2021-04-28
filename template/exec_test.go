@@ -229,7 +229,7 @@ var execTests = []execTest{
 	// Trivial cases.
 	{"empty", "", "", nil, true},
 	{"text", "some text", "some text", nil, true},
-	{"nil action", "{{nil}}", "", nil, true}, // this works in gnd.la/template, changed to true
+	{"nil action", "{{nil}}", "", nil, true}, // this works in gondola/template, changed to true
 
 	// Ideal constants.
 	{"ideal int", "{{typeOf 3}}", "int", 0, true},
@@ -237,8 +237,8 @@ var execTests = []execTest{
 	{"ideal exp float", "{{typeOf 1e1}}", "float64", 0, true},
 	{"ideal complex", "{{typeOf 1i}}", "complex128", 0, true},
 	{"ideal int", "{{typeOf " + bigInt + "}}", "int", 0, true},
-	// gnd.la/template supports this, it does not return an error {"ideal too big", "{{typeOf " + bigUint + "}}", "", 0, false},
-	{"ideal nil without type", "{{nil}}", "", 0, true}, // this works in gnd.la/template, changed to true
+	// gondola/template supports this, it does not return an error {"ideal too big", "{{typeOf " + bigUint + "}}", "", 0, false},
+	{"ideal nil without type", "{{nil}}", "", 0, true}, // this works in gondola/template, changed to true
 
 	// Fields of structs.
 	{".X", "-{{.X}}-", "-x-", tVal, true},
@@ -250,7 +250,7 @@ var execTests = []execTest{
 	{"map .two", "{{.MSI.two}}", "2", tVal, true},
 	{"map .NO", "{{.MSI.NO}}", "", tVal, true},
 	{"map .one interface", "{{.MXI.one}}", "1", tVal, true},
-	// {"map .WRONG args", "{{.MSI.one 1}}", "", tVal, false}, - gnd.la/template does not yet report this error
+	// {"map .WRONG args", "{{.MSI.one 1}}", "", tVal, false}, - gondola/template does not yet report this error
 	{"map .WRONG type", "{{.MII.one}}", "", tVal, false},
 
 	// Dots of all kinds to test basic evaluation.
@@ -303,7 +303,7 @@ var execTests = []execTest{
 	{".Method0", "-{{.Method0}}-", "-M0-", tVal, true},
 	{".Method1(1234)", "-{{.Method1 1234}}-", "-1234-", tVal, true},
 	{".Method1(.I)", "-{{.Method1 .I}}-", "-17-", tVal, true},
-	//{".Method2(3, .X)", "-{{.Method2 3 .X}}-", "-Method2: 3 x-", tVal, true}, - not supported by gnd.la/template
+	//{".Method2(3, .X)", "-{{.Method2 3 .X}}-", "-Method2: 3 x-", tVal, true}, - not supported by gondola/template
 	{".Method2(.U16, `str`)", "-{{.Method2 .U16 `str`}}-", "-Method2: 16 str-", tVal, true},
 	{".Method2(.U16, $x)", "{{if $x := .X}}-{{.Method2 .U16 $x}}{{end}}-", "-Method2: 16 x-", tVal, true},
 	{".Method3(nil constant)", "-{{.Method3 nil}}-", "-Method3: <nil>-", tVal, true},
@@ -357,7 +357,7 @@ var execTests = []execTest{
 	// If.
 	{"if true", "{{if true}}TRUE{{end}}", "TRUE", tVal, true},
 	{"if false", "{{if false}}TRUE{{else}}FALSE{{end}}", "FALSE", tVal, true},
-	// Supported by gnd.la/template {"if nil", "{{if nil}}TRUE{{end}}", "", tVal, false},
+	// Supported by gondola/template {"if nil", "{{if nil}}TRUE{{end}}", "", tVal, false},
 	{"if 1", "{{if 1}}NON-ZERO{{else}}ZERO{{end}}", "NON-ZERO", tVal, true},
 	{"if 0", "{{if 0}}NON-ZERO{{else}}ZERO{{end}}", "ZERO", tVal, true},
 	{"if 1.5", "{{if 1.5}}NON-ZERO{{else}}ZERO{{end}}", "NON-ZERO", tVal, true},
@@ -504,7 +504,7 @@ var execTests = []execTest{
 	{"bug6c", "{{vfunc .V1 .V0}}", "vfunc", tVal, true},
 	{"bug6d", "{{vfunc .V1 .V1}}", "vfunc", tVal, true},
 	// Legal parse but illegal execution: non-function should have no arguments.
-	// Not supported by gnd.la/template yet
+	// Not supported by gondola/template yet
 	//{"bug7a", "{{3 2}}", "", tVal, false},
 	//{"bug7b", "{{$x := 1}}{{$x 2}}", "", tVal, false},
 	//{"bug7c", "{{$x := 1}}{{3 | $x}}", "", tVal, false},

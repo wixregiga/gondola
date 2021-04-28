@@ -23,19 +23,20 @@ import (
 	"syscall"
 	"time"
 
-	"gnd.la/app"
-	"gnd.la/config"
-	"gnd.la/internal/devutil"
-	"gnd.la/internal/runtimeutil"
-	"gnd.la/log"
-	"gnd.la/util/stringutil"
+	"gondola/app"
+	"gondola/config"
+	"gondola/internal/devutil"
+	"gondola/internal/runtimeutil"
+	"gondola/log"
+	"gondola/util/stringutil"
 
 	"io/ioutil"
 
+	"gondola/internal/devutil/devassets"
+	"gondola/internal/devutil/devserver"
+
 	"github.com/rainycape/browser"
 	"github.com/rainycape/command"
-	"gnd.la/internal/devutil/devassets"
-	"gnd.la/internal/devutil/devserver"
 )
 
 const (
@@ -728,7 +729,7 @@ type devOptions struct {
 	Port      int    `help:"Port to listen on"`
 	Config    string `help:"Configuration file. If empty, dev.conf and app.conf are tried in that order"`
 	Tags      string `help:"Build tags to pass to the Go compiler"`
-	NoDebug   bool   `name:"no-debug" help:"Disable AppDebug, TemplateDebug and LogDebug - see gnd.la/config for details"`
+	NoDebug   bool   `name:"no-debug" help:"Disable AppDebug, TemplateDebug and LogDebug - see gondola/config for details"`
 	NoCache   bool   `name:"no-cache" help:"Disables the cache when running the project"`
 	Profile   bool   `help:"Compiles and runs the project with profiling enabled"`
 	NoBrowser bool   `name:"no-browser" help:"Don't open the default browser when starting the development server"`

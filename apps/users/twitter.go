@@ -3,8 +3,8 @@ package users
 import (
 	"reflect"
 
-	"gnd.la/app"
-	"gnd.la/social/twitter"
+	"gondola/app"
+	"gondola/social/twitter"
 )
 
 type Twitter struct {

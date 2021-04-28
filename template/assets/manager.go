@@ -8,8 +8,8 @@ import (
 	"runtime"
 	"sync"
 
-	"gnd.la/crypto/hashutil"
-	"gnd.la/net/urlutil"
+	"gondola/crypto/hashutil"
+	"gondola/net/urlutil"
 
 	"github.com/rainycape/vfs"
 )

@@ -6,10 +6,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"gnd.la/util/yaml"
+	"gondola/util/yaml"
 )
 
-// Constants set by gnd.la/cache/layer, read by gnd.la/app.Context
+// Constants set by gondola/cache/layer, read by gondola/app.Context
 const (
 	LayerCachedKey          = "___gondola_cached"
 	LayerServedFromCacheKey = "___gondola_layer_served_from_cache"

@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"gnd.la/util/stringutil"
+	"gondola/util/stringutil"
 )
 
 type Options map[string]string

@@ -6,9 +6,9 @@ import (
 	"reflect"
 	"time"
 
-	"gnd.la/app"
-	"gnd.la/net/oauth2"
-	"gnd.la/social/facebook"
+	"gondola/app"
+	"gondola/net/oauth2"
+	"gondola/social/facebook"
 )
 
 type Facebook struct {

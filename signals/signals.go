@@ -5,7 +5,7 @@ import (
 	"strings"
 	"sync"
 
-	"gnd.la/log"
+	"gondola/log"
 )
 
 // Listener is the interface returned by Listen. Call Remove to stop listening

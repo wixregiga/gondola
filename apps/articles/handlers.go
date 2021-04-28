@@ -5,10 +5,10 @@ import (
 	"html/template"
 	"path"
 
-	"gnd.la/app"
-	"gnd.la/log"
+	"gondola/app"
+	"gondola/log"
 
-	"gnd.la/apps/articles/article"
+	"gondola/apps/articles/article"
 
 	"github.com/rainycape/vfs"
 )

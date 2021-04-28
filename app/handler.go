@@ -5,8 +5,8 @@ import "net/http"
 // Handler is the function type used to satisfy a request
 // (not necessarily HTTP) with a given *Context.
 // Gondola uses Handler for responding to HTTP requests
-// (via gnd.la/app.App), executing commands
-// (via gnd.la/commands) and tasks (via gnd.la/task).
+// (via gondola/app.App), executing commands
+// (via gondola/commands) and tasks (via gondola/task).
 type Handler func(*Context)
 
 // HandlerOptions represent the different options which might be

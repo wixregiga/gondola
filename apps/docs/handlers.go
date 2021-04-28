@@ -4,10 +4,10 @@ import (
 	"path"
 	"strings"
 
-	"gnd.la/app"
-	"gnd.la/app/reusableapp"
-	"gnd.la/apps/docs/doc"
-	"gnd.la/log"
+	"gondola/app"
+	"gondola/app/reusableapp"
+	"gondola/apps/docs/doc"
+	"gondola/log"
 )
 
 const (

@@ -7,8 +7,8 @@ import (
 	"path"
 	"strings"
 
-	"gnd.la/crypto/hashutil"
-	"gnd.la/log"
+	"gondola/crypto/hashutil"
+	"gondola/log"
 )
 
 var (
